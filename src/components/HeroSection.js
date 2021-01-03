@@ -51,7 +51,13 @@ const HeroSection = () => {
         alt=""
         srcset=""
       />
-      <img className="hero-image" src={nn3} alt="" srcset="" />
+      <motion.img
+        variants={fade}
+        className="hero-image"
+        src={nn3}
+        alt=""
+        srcset=""
+      />
       <motion.img
         variants={fade}
         className="hero-image"
@@ -72,8 +78,19 @@ const HeroContainer = styled(motion.main)`
   .hero-image {
     position: absolute;
     top: 50%;
+    /* bottom: 0; */
     left: 50%;
     transform: translate(-50%, -50%);
+    /* transform: translate(-50%, 33%); */
+    max-width: 80%;
+  }
+
+  @media (max-width: 1000px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
   }
 `;
 

@@ -1,14 +1,29 @@
 // Styled
 import styled from "styled-components";
+// Animations
+import { motion } from "framer-motion";
+import { fade } from "./LogoAnimations";
+import { useScroll } from "./useScroll";
 
 const ContactSection = () => {
+  const [element, controls] = useScroll();
   return (
     <Contact>
       <div className="container">
-        <h2>
+        <motion.h2
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+        >
           Get In <span className="secondary">Touch.</span>
-        </h2>
-        <form>
+        </motion.h2>
+        <motion.form
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+        >
           <div className="row">
             <input type="text" id="name" placeholder="Name" />
             <input type="email" id="email" placeholder="Email" />
@@ -27,7 +42,7 @@ const ContactSection = () => {
           <div className="row button-container">
             <button>Send Message</button>
           </div>
-        </form>
+        </motion.form>
       </div>
     </Contact>
   );
@@ -96,6 +111,22 @@ const Contact = styled.section`
 
   .button-container {
     justify-content: flex-end;
+  }
+
+  @media (max-width: 1165px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 70%;
+    }
+
+    .row {
+      flex-direction: column;
+    }
   }
 `;
 

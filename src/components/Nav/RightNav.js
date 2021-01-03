@@ -48,12 +48,18 @@ const NavList = styled.ul`
     width: 100%;
   }
 
+  @media (max-width: 1000px) {
+    li {
+      margin-left: 2rem;
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    background-color: #8bd0f2;
-    box-shadow: var(--custom-shadow);
+    background-color: #374251;
+    border-left: 1px solid #7f8e94;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;

@@ -7,14 +7,25 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import test1 from "../media/sample1.png";
 import test2 from "../media/sample2.png";
 import test3 from "../media/sample3.png";
+// Animations
+import { motion } from "framer-motion";
+import { fade } from "./LogoAnimations";
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
     <Services>
       <div className="container">
         {/* <h2>What We Do</h2> */}
         <div className="row">
-          <a className="card">
+          <motion.a
+            ref={element}
+            variants={fade}
+            animate={controls}
+            initial="hidden"
+            className="card"
+          >
             <div className="service-icon-container">
               <img className="service-icon" src={test1} alt="" srcset="" />
             </div>
@@ -50,9 +61,15 @@ const ServicesSection = () => {
               <li>
                 <button>Find Out More</button>
               </li> */}
-          </a>
+          </motion.a>
 
-          <a className="card">
+          <motion.a
+            ref={element}
+            variants={fade}
+            animate={controls}
+            initial="hidden"
+            className="card"
+          >
             <div className="service-icon-container">
               <img className="service-icon" src={test2} alt="" srcset="" />
             </div>
@@ -67,9 +84,15 @@ const ServicesSection = () => {
               We deliver bespoke web design and development that simply cannot
               be replicated by "out-the-box" alternatives.
             </p>
-          </a>
+          </motion.a>
 
-          <a className="card">
+          <motion.a
+            ref={element}
+            variants={fade}
+            animate={controls}
+            initial="hidden"
+            className="card"
+          >
             <div className="service-icon-container">
               <img className="service-icon" src={test3} alt="" srcset="" />
             </div>
@@ -84,7 +107,7 @@ const ServicesSection = () => {
               We deliver bespoke web design and development that simply cannot
               be replicated by "out-the-box" alternatives.
             </p>
-          </a>
+          </motion.a>
         </div>
       </div>
     </Services>
@@ -154,6 +177,59 @@ const Services = styled.section`
   }
 
   .card button {
+  }
+
+  @media (max-width: 1165px) {
+    .row {
+      justify-content: center;
+    }
+
+    .card {
+      flex-basis: 45%;
+    }
+
+    .card:nth-child(1) {
+      margin-right: 5%;
+    }
+
+    .card:nth-child(2) {
+      margin-left: 5%;
+    }
+
+    .card:nth-child(3) {
+      margin-top: 3rem;
+    }
+  }
+
+  /* @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  } */
+
+  @media (max-width: 510px) {
+    /* .container {
+      width: 90%;
+    } */
+
+    .row {
+      flex-direction: column;
+    }
+
+    .card {
+      flex-basis: 100%;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(2),
+    .card:nth-child(3) {
+      margin: 0;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(2) {
+      margin-bottom: 3rem;
+    }
   }
 `;
 

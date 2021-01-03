@@ -1,7 +1,7 @@
 // Styled
 import styled from "styled-components";
 // Images
-import logo from "../media/napper-network-complete.png";
+import logo from "../media/logo-alt.png";
 
 const FooterSection = () => {
   return (
@@ -37,6 +37,7 @@ const Footer = styled.footer`
   .top-footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .top-footer a:hover {
@@ -56,7 +57,23 @@ const Footer = styled.footer`
   }
 
   .logo {
-    height: 100px;
+    /* height: 100px; */
+  }
+
+  @media (max-width: 1165px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+
+    .top-footer a {
+      margin: 0 1rem;
+    }
   }
 `;
 

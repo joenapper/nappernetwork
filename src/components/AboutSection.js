@@ -2,12 +2,23 @@
 import styled from "styled-components";
 // Images
 import sample from "../media/sample.png";
+// Animations
+import { motion } from "framer-motion";
+import { fade } from "./LogoAnimations";
+import { useScroll } from "./useScroll";
 
 const AboutSection = () => {
+  const [element, controls] = useScroll();
   return (
     <About>
       <div className="container">
-        <div className="about-text">
+        <motion.div
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+          className="about-text"
+        >
           <h2>
             <span className="secondary">Why</span> Us?
           </h2>
@@ -24,9 +35,17 @@ const AboutSection = () => {
             dolorum ullam aliquid maxime!
           </p>
           <button>Find Out More</button>
-        </div>
+        </motion.div>
 
-        <img src={sample} alt="" srcset="" />
+        <motion.img
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+          src={sample}
+          alt=""
+          srcset=""
+        />
       </div>
     </About>
   );
@@ -38,18 +57,18 @@ const About = styled.section`
   padding: 4rem 0;
   position: relative;
 
-  ::before {
+  /* ::before {
     content: "";
     display: block;
     position: absolute;
     background-color: #7f8e94;
-    width: 100%;
+    width: 60%;
     top: 4rem;
     bottom: 4rem;
     left: 50%;
     transform: skewX(5deg);
     z-index: 0;
-  }
+  } */
 
   .container {
     display: flex;
@@ -70,6 +89,17 @@ const About = styled.section`
   img {
     width: 60%;
     z-index: 1;
+  }
+
+  @media (max-width: 1165px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .about-text,
+    img {
+      width: 100%;
+    }
   }
 `;
 

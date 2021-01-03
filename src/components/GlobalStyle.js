@@ -12,6 +12,7 @@ body {
     background-color: #374251;
     color: #fff;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden !important;
 }
 
 @font-face {
@@ -63,6 +64,24 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        width: 70%
+    }
+}
+
+@media (max-width: 1165px) {
+    .container {
+      width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+      width: 80%;
+    }
 }
 `;
 
