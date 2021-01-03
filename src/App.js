@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// Components
+import GlobalStyle from "./components/GlobalStyle";
+import Navbar from "./components/Nav/Navbar";
+import HeroSection from "./components/HeroSection";
+import ServicesSection from "./components/ServicesSection";
+import BannerSection from "./components/BannerSection";
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      {/* ADD MENU TEXT NEXT TO BURGER */}
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <BannerSection />
+      <AboutSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }
