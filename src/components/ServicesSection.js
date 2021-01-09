@@ -14,6 +14,8 @@ import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <Services>
       <div className="container">
@@ -64,9 +66,9 @@ const ServicesSection = () => {
           </motion.a>
 
           <motion.a
-            ref={element}
+            ref={element2}
             variants={fade}
-            animate={controls}
+            animate={controls2}
             initial="hidden"
             className="card"
           >
@@ -87,9 +89,9 @@ const ServicesSection = () => {
           </motion.a>
 
           <motion.a
-            ref={element}
+            ref={element3}
             variants={fade}
-            animate={controls}
+            animate={controls3}
             initial="hidden"
             className="card"
           >
