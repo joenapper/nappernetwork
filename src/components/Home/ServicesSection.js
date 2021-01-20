@@ -1,16 +1,18 @@
 // Styled
 import styled from "styled-components";
-//
+// Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-//
-import test1 from "../media/sample1.png";
-import test2 from "../media/sample2.png";
-import test3 from "../media/sample3.png";
+// Images
+import test1 from "../../media/sample1.png";
+import test2 from "../../media/sample2.png";
+import test3 from "../../media/sample3.png";
 // Animations
 import { motion } from "framer-motion";
-import { fade } from "./LogoAnimations";
-import { useScroll } from "./useScroll";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
+// Router
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -28,21 +30,22 @@ const ServicesSection = () => {
             initial="hidden"
             className="card"
           >
-            <div className="service-icon-container">
-              <img className="service-icon" src={test1} alt="" srcset="" />
-            </div>
-            <h4>
-              Web Development
-              <FontAwesomeIcon
-                className="chevron-right"
-                icon={faChevronRight}
-              />
-            </h4>
-            <p>
-              We deliver bespoke web design and development that simply cannot
-              be replicated by "out-the-box" alternatives.
-            </p>
-            {/* <li>
+            <Link to="/web-development">
+              <div className="service-icon-container">
+                <img className="service-icon" src={test1} alt="" srcset="" />
+              </div>
+              <h4>
+                Web Development
+                <FontAwesomeIcon
+                  className="chevron-right"
+                  icon={faChevronRight}
+                />
+              </h4>
+              <p>
+                We deliver bespoke web design and development that simply cannot
+                be replicated by "out-the-box" alternatives.
+              </p>
+              {/* <li>
                 <h4>Web Development</h4>
               </li>
               <li>
@@ -63,6 +66,7 @@ const ServicesSection = () => {
               <li>
                 <button>Find Out More</button>
               </li> */}
+            </Link>
           </motion.a>
 
           <motion.a
@@ -72,20 +76,22 @@ const ServicesSection = () => {
             initial="hidden"
             className="card"
           >
-            <div className="service-icon-container">
-              <img className="service-icon" src={test2} alt="" srcset="" />
-            </div>
-            <h4>
-              Online Marketing
-              <FontAwesomeIcon
-                className="chevron-right"
-                icon={faChevronRight}
-              />
-            </h4>
-            <p>
-              We deliver bespoke web design and development that simply cannot
-              be replicated by "out-the-box" alternatives.
-            </p>
+            <Link to="digital-marketing">
+              <div className="service-icon-container">
+                <img className="service-icon" src={test2} alt="" srcset="" />
+              </div>
+              <h4>
+                Digital Marketing
+                <FontAwesomeIcon
+                  className="chevron-right"
+                  icon={faChevronRight}
+                />
+              </h4>
+              <p>
+                We deliver bespoke web design and development that simply cannot
+                be replicated by "out-the-box" alternatives.
+              </p>
+            </Link>
           </motion.a>
 
           <motion.a
@@ -95,20 +101,22 @@ const ServicesSection = () => {
             initial="hidden"
             className="card"
           >
-            <div className="service-icon-container">
-              <img className="service-icon" src={test3} alt="" srcset="" />
-            </div>
-            <h4>
-              Social Media
-              <FontAwesomeIcon
-                className="chevron-right"
-                icon={faChevronRight}
-              />
-            </h4>
-            <p>
-              We deliver bespoke web design and development that simply cannot
-              be replicated by "out-the-box" alternatives.
-            </p>
+            <Link to="social-media">
+              <div className="service-icon-container">
+                <img className="service-icon" src={test3} alt="" srcset="" />
+              </div>
+              <h4>
+                Social Media
+                <FontAwesomeIcon
+                  className="chevron-right"
+                  icon={faChevronRight}
+                />
+              </h4>
+              <p>
+                We deliver bespoke web design and development that simply cannot
+                be replicated by "out-the-box" alternatives.
+              </p>
+            </Link>
           </motion.a>
         </div>
       </div>
@@ -148,7 +156,7 @@ const Services = styled.section`
   }
 
   .card:nth-child(3) .service-icon-container {
-    background-color: purple;
+    background-color: #af6b8c;
   }
 
   .card h4 {

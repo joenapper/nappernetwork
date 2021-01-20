@@ -42,6 +42,23 @@ button:hover {
     background-color: #8bd0f2;
 }
 
+.button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #374251;
+    font-family: 'Kollektif', sans-serif;
+    transition: 0.3s ease-in-out
+}
+
+.button:hover {
+    background-color: #374251;
+    color: #fff;
+}
+
 h2 {
     font-size: 3rem;
     font-family: "Kollektif", sans-serif;
@@ -56,6 +73,7 @@ h2 {
 }
 
 .container {
+    height: 100%;
     width: 60%;
     margin: auto;
 }
@@ -72,9 +90,15 @@ h2 {
     }
 }
 
-@media (max-width: 1165px) {
+/* @media (max-width: 1165px) {
     .container {
       width: 60%;
+    }
+} */
+
+@media (max-width: 1024px) {
+    .extended-title {
+        font-size: 2.5rem;
     }
 }
 

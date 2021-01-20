@@ -2,19 +2,21 @@
 import styled from "styled-components";
 // Images
 import logo from "../media/logo-alt.png";
+// Router
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
     <Footer>
       <div className="container">
         <div className="top-footer">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
-          <a href="#">Privacy Policy</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
 
         <div className="footer-hr"></div>

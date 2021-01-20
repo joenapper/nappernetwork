@@ -5,7 +5,7 @@ const BannerSection = () => {
   return (
     <Banner>
       <div className="container">
-        <h2>
+        <h2 className="extended-title">
           Driven by results, we create successful marketing solutions for
           businesses.
         </h2>

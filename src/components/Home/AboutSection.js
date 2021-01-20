@@ -1,14 +1,15 @@
 // Styled
 import styled from "styled-components";
 // Images
-import sample from "../media/sample.png";
+import sample from "../../media/sample.png";
 // Animations
 import { motion } from "framer-motion";
-import { fade } from "./LogoAnimations";
-import { useScroll } from "./useScroll";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
 const AboutSection = () => {
   const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <About>
       <div className="container">
@@ -38,9 +39,9 @@ const AboutSection = () => {
         </motion.div>
 
         <motion.img
-          ref={element}
+          ref={element2}
           variants={fade}
-          animate={controls}
+          animate={controls2}
           initial="hidden"
           src={sample}
           alt=""

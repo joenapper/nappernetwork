@@ -2,11 +2,12 @@
 import styled from "styled-components";
 // Animations
 import { motion } from "framer-motion";
-import { fade } from "./LogoAnimations";
-import { useScroll } from "./useScroll";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
 const ContactSection = () => {
   const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Contact>
       <div className="container">
@@ -19,9 +20,9 @@ const ContactSection = () => {
           Get In <span className="secondary">Touch.</span>
         </motion.h2>
         <motion.form
-          ref={element}
+          ref={element2}
           variants={fade}
-          animate={controls}
+          animate={controls2}
           initial="hidden"
         >
           <div className="row">

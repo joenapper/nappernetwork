@@ -1,26 +1,28 @@
 // Styled
 import styled from "styled-components";
+// Router
+import { Link } from "react-router-dom";
 
 const RightNav = ({ open }) => {
   return (
     <NavList open={open}>
       <li>
-        <a href="https://www.google.com">Home</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="https://www.google.com">About</a>
+        <Link to="/about">About</Link>
       </li>
       <li>
-        <a href="https://www.google.com">Services</a>
+        <Link to="/services">Services</Link>
       </li>
       <li>
-        <a href="https://www.google.com">Blog</a>
+        <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <a href="https://www.google.com">Careers</a>
+        <Link to="/careers">Careers</Link>
       </li>
       <li>
-        <a href="https://www.google.com">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
     </NavList>
   );
@@ -48,7 +50,7 @@ const NavList = styled.ul`
     width: 100%;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1600px) {
     li {
       margin-left: 2rem;
     }

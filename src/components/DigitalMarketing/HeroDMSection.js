@@ -1,0 +1,195 @@
+// Styled
+import styled from "styled-components";
+// Images
+import DigitalMarketing from "../../media/digital-marketing.png";
+// Font-Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+const HeroDMSection = () => {
+  return (
+    <HeroContainer>
+      <div className="container">
+        <div className="service-text-container">
+          <h2>Digital Marketing</h2>
+          <p>
+            Focusing on results, we provide effective digital marketing
+            strategies to engage and convert customers.
+          </p>
+          <div className="button-container">
+            <a className="button">
+              Enquire Now{" "}
+              <FontAwesomeIcon
+                className="chevron-right"
+                icon={faChevronRight}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </HeroContainer>
+  );
+};
+
+const HeroContainer = styled.section`
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  padding: calc(8vh + 4rem) 0rem 4rem 0rem;
+  background: url(${DigitalMarketing}) center no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    background-image: linear-gradient(
+        216deg,
+        rgba(77, 77, 77, 0.05) 0%,
+        rgba(77, 77, 77, 0.05) 25%,
+        rgba(42, 42, 42, 0.050980392156862744) 25%,
+        rgba(42, 42, 42, 0.050980392156862744) 38%,
+        rgba(223, 223, 223, 0.05) 38%,
+        rgba(223, 223, 223, 0.05) 75%,
+        rgba(36, 36, 36, 0.05) 75%,
+        rgba(36, 36, 36, 0.05) 100%
+      ),
+      linear-gradient(
+        44deg,
+        rgba(128, 128, 128, 0.05) 0%,
+        rgba(128, 128, 128, 0.05) 34%,
+        rgba(212, 212, 212, 0.05) 34%,
+        rgba(212, 212, 212, 0.05) 57%,
+        rgba(25, 25, 25, 0.05) 57%,
+        rgba(25, 25, 25, 0.05) 89%,
+        rgba(135, 135, 135, 0.05) 89%,
+        rgba(135, 135, 135, 0.05) 100%
+      ),
+      linear-gradient(
+        241deg,
+        rgba(55, 55, 55, 0.05) 0%,
+        rgba(55, 55, 55, 0.05) 14%,
+        rgba(209, 209, 209, 0.05) 14%,
+        rgba(209, 209, 209, 0.05) 60%,
+        rgba(245, 245, 245, 0.05) 60%,
+        rgba(245, 245, 245, 0.05) 69%,
+        rgba(164, 164, 164, 0.05) 69%,
+        rgba(164, 164, 164, 0.05) 100%
+      ),
+      linear-gradient(
+        249deg,
+        rgba(248, 248, 248, 0.05) 0%,
+        rgba(248, 248, 248, 0.05) 32%,
+        rgba(148, 148, 148, 0.05) 32%,
+        rgba(148, 148, 148, 0.05) 35%,
+        rgba(202, 202, 202, 0.05) 35%,
+        rgba(202, 202, 202, 0.05) 51%,
+        rgba(181, 181, 181, 0.05) 51%,
+        rgba(181, 181, 181, 0.05) 100%
+      ),
+      linear-gradient(92deg, rgb(55, 66, 81), rgb(55, 66, 81));
+    height: 100%;
+    width: 85%;
+    transform: skewX(35deg);
+    z-index: 1;
+  }
+
+  .service-text-container {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-text-container h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .service-text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    margin-right: 20%;
+  }
+
+  .button-container {
+    width: 80%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .chevron-right {
+    margin-left: 0.4rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1700px) {
+    &::after {
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .service-text-container h2 {
+      font-size: 5rem;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    .service-text-container p,
+    .button-container {
+      width: 90%;
+      margin-right: 10%;
+    }
+  }
+
+  @media (max-width: 1165px) {
+    .service-text-container h2 {
+      font-size: 4rem;
+    }
+
+    .service-text-container p {
+      width: 100%;
+      margin-right: 0%;
+    }
+
+    .button-container {
+      width: 100%;
+      margin-right: 0%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &::after {
+      width: 150%;
+      left: -70%;
+    }
+
+    .service-text-container h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-text-container {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 710px) {
+    .service-text-container h2 {
+      font-size: 3rem;
+    }
+  }
+`;
+
+export default HeroDMSection;
