@@ -32,7 +32,11 @@ const ServicesSection = () => {
           >
             <Link to="/web-development">
               <div className="service-icon-container">
-                <img className="service-icon" src={test1} alt="" srcset="" />
+                <img
+                  className="service-icon"
+                  src={test1}
+                  alt="Napper Network Web Development"
+                />
               </div>
               <h4>
                 Web Development
@@ -78,7 +82,11 @@ const ServicesSection = () => {
           >
             <Link to="digital-marketing">
               <div className="service-icon-container">
-                <img className="service-icon" src={test2} alt="" srcset="" />
+                <img
+                  className="service-icon"
+                  src={test2}
+                  alt="Napper Network Digital Marketing"
+                />
               </div>
               <h4>
                 Digital Marketing
@@ -103,7 +111,11 @@ const ServicesSection = () => {
           >
             <Link to="social-media">
               <div className="service-icon-container">
-                <img className="service-icon" src={test3} alt="" srcset="" />
+                <img
+                  className="service-icon"
+                  src={test3}
+                  alt="Napper Network Social Media"
+                />
               </div>
               <h4>
                 Social Media
@@ -217,7 +229,7 @@ const Services = styled.section`
     }
   } */
 
-  @media (max-width: 510px) {
+  @media (max-width: 521px) {
     /* .container {
       width: 90%;
     } */

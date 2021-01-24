@@ -5,50 +5,77 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
 // Images
 import EmailMarketingImg from "../../../media/email-marketing.png";
+// Animations
+import { motion } from "framer-motion";
+import { fade } from "../../LogoAnimations";
+import { useScroll } from "../../useScroll";
 
 const ServiceEmailMarketing = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <EmailMarketing>
-      <h2>Email Marketing</h2>
-      <p>
-        We provide effective search engine optimisation strategies to improve
-        the visablility of your website.
-      </p>
-      <h3>We can:</h3>
-      <ul className="we-can">
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Something about EmailMarketing...</p>
-        </li>
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Something about EmailMarketing...</p>
-        </li>
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Something about EmailMarketing...</p>
-        </li>
-      </ul>
+      <motion.div
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        className="service-text"
+      >
+        <h2>Email Marketing</h2>
+        <p>
+          We provide effective marketing strategies to convert prospects into
+          customers and one-time buyers into loyal, returning customers.
+        </p>
+        <h3>We can:</h3>
+        <ul className="we-can">
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>Build an email list full of targeted customers.</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>
+              Optimise your emails for the highest open rate and click through
+              rate.
+            </p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>Automate the process of nurturing your leads.</p>
+          </li>
+        </ul>
+      </motion.div>
+      <motion.div
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        className="service-image"
+      >
+        <div className="img-container"></div>
+      </motion.div>
     </EmailMarketing>
   );
 };
 
 const EmailMarketing = styled.div`
-  width: 50%;
-  padding: 4rem 4rem 4rem 0rem;
-  margin: 8rem 0rem;
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
   position: relative;
   color: #374251;
-  text-align: left;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    height: 100%;
-    width: 50vw;
+  .service-text {
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  .service-image {
+    height: 40vh;
+    width: 100%;
+    margin-right: -50%;
+    position: relative;
     background-image: linear-gradient(
         216deg,
         rgba(77, 77, 77, 0.05) 0%,
@@ -94,22 +121,21 @@ const EmailMarketing = styled.div`
         rgba(181, 181, 181, 0.05) 100%
       ),
       linear-gradient(92deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    box-shadow: 1px 1px 5px 1px rgba(77, 77, 77, 0.05);
   }
 
-  &::after {
-    content: "";
-    display: block;
+  .img-container {
     position: absolute;
-    top: 10%;
-    left: 110%;
-    height: 80%;
-    width: 90%;
+    top: 2rem;
+    right: 50%;
+    bottom: 2rem;
+    left: 2rem;
     background: url(${EmailMarketingImg}) center no-repeat;
     background-size: cover;
   }
 
   h2 {
-    margin: 1rem 0rem 2rem 0rem;
+    margin-bottom: 2rem;
     font-family: "Kollektif-Bold", sans-serif;
     text-align: right;
   }
@@ -142,25 +168,46 @@ const EmailMarketing = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: 100%;
-    margin: 418px 0% 8rem 0%;
-    padding: 4rem 0rem;
+    flex-direction: column;
 
-    &::before {
-      display: none;
+    .service-image {
+      width: 100%;
+      margin: 0;
+      order: 1;
     }
 
-    &::after {
-      top: -100%;
-      left: 0;
-      height: 100%;
-      min-height: 418px;
+    .img-container {
+      left: 2rem;
+    }
+
+    .service-text {
       width: 100%;
+      padding: 0;
+      order: 2;
     }
 
     h2 {
-      margin-top: -1rem;
+      margin-top: 1rem;
     }
+  }
+
+  @media (max-width: 768px) {
+    .img-container {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 521px) {
+    .service-image {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 421px) {
+    padding: 0rem;
   }
 `;
 

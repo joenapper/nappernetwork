@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ServiceTitle from "./ServiceDetailComponents/ServiceTitle";
 import ServiceSEO from "./ServiceDetailComponents/ServiceSEO";
 import ServiceEmailMarketing from "./ServiceDetailComponents/ServiceEmailMarketing";
-import ServiceAnalytics from "./ServiceDetailComponents/ServiceAnalytics";
+import ServicePPC from "./ServiceDetailComponents/ServicePPC";
 
 const ServiceDetails = () => {
   return (
@@ -13,7 +13,7 @@ const ServiceDetails = () => {
         <ServiceTitle />
         <ServiceSEO />
         <ServiceEmailMarketing />
-        <ServiceAnalytics />
+        <ServicePPC />
       </div>
     </ServiceDetailContainer>
   );

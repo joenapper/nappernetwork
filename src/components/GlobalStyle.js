@@ -59,6 +59,11 @@ button:hover {
     color: #fff;
 }
 
+.chevron-right {
+    margin-left: 0.4rem;
+    font-size: 1rem;
+}
+
 h2 {
     font-size: 3rem;
     font-family: "Kollektif", sans-serif;
@@ -105,6 +110,21 @@ h2 {
 @media (max-width: 768px) {
     .container {
       width: 80%;
+    }
+
+    .button {
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+    }
+
+    .chevron-right {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 521px) {
+    h2 {
+        font-size: 2.25rem;
     }
 }
 `;

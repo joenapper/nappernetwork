@@ -22,7 +22,7 @@ const FooterSection = () => {
         <div className="footer-hr"></div>
 
         <div className="btm-footer">
-          <img className="logo" src={logo} alt="" srcset="" />
+          <img className="logo" src={logo} alt="Napper Network" />
           <p>All Rights Reserved &copy; 2020 NapperNetwork</p>
           <p>Socials</p>
         </div>

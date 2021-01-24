@@ -5,49 +5,72 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
 // Images
 import AnalyticsImg from "../../../media/analytics.png";
+// Animations
+import { motion } from "framer-motion";
+import { fade } from "../../LogoAnimations";
+import { useScroll } from "../../useScroll";
 
-const ServiceAnalytics = () => {
+const ServicePPC = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
-    <Analytics>
-      <h2>Analytics</h2>
-      <p>
-        We provide effective search engine optimisation strategies to improve
-        the visablility of your website.
-      </p>
-      <h3>We can:</h3>
-      <ul className="we-can">
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Provide a detailed SEO audit of your Website.</p>
-        </li>
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Implement key words to gain more site visits.</p>
-        </li>
-        <li>
-          <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-          <p>Help you understand how SEO works.</p>
-        </li>
-      </ul>
-    </Analytics>
+    <PPC>
+      <motion.div
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        className="service-image"
+      >
+        <div className="img-container"></div>
+      </motion.div>
+      <motion.div
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        className="service-text"
+      >
+        <h2>Pay-Per-Click Advertising</h2>
+        <p>
+          We create successful 'PPC' campaigns to drive traffic to your website,
+          increase conversions and boost brand recognition.
+        </p>
+        <h3>We can:</h3>
+        <ul className="we-can">
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>Analyse competitors and identify targeteted keywords.</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>
+              Write effective ad copy to increase quality score and reduce cost
+              per acquisition.
+            </p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>Build PPC landing pages optimised for conversion.</p>
+          </li>
+        </ul>
+      </motion.div>
+    </PPC>
   );
 };
 
-const Analytics = styled.div`
-  width: 50%;
-  margin: 8rem 0% 8rem 50%;
-  padding: 4rem 0rem 4rem 4rem;
+const PPC = styled.div`
+  padding: 4rem 0rem;
+  display: flex;
+  align-items: center;
   position: relative;
   color: #374251;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -50vw;
-    height: 100%;
-    width: 50vw;
+  .service-image {
+    height: 40vh;
+    width: 100%;
+    margin-left: -50%;
+    position: relative;
     background-image: linear-gradient(
         216deg,
         rgba(77, 77, 77, 0.05) 0%,
@@ -93,22 +116,26 @@ const Analytics = styled.div`
         rgba(181, 181, 181, 0.05) 100%
       ),
       linear-gradient(92deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    box-shadow: 1px 1px 5px 1px rgba(77, 77, 77, 0.05);
   }
 
-  &::after {
-    content: "";
-    display: block;
+  .img-container {
     position: absolute;
-    top: 10%;
-    left: -100%;
-    height: 80%;
-    width: 90%;
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 50%;
     background: url(${AnalyticsImg}) center no-repeat;
     background-size: cover;
   }
 
+  .service-text {
+    width: 50%;
+    padding-left: 2rem;
+  }
+
   h2 {
-    margin: 1rem 0rem 2rem 0rem;
+    margin-bottom: 2rem;
     font-family: "Kollektif-Bold", sans-serif;
   }
 
@@ -140,26 +167,43 @@ const Analytics = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: 100%;
-    margin: 418px 0% -4rem 0%;
-    padding: 4rem 0rem;
+    flex-direction: column;
 
-    &::before {
-      display: none;
+    .service-image {
+      width: 100%;
+      margin: 0;
     }
 
-    &::after {
-      top: -100%;
-      left: 0;
-      height: 100%;
-      min-height: 418px;
+    .img-container {
+      left: 2rem;
+    }
+
+    .service-text {
       width: 100%;
+      padding: 0;
     }
 
     h2 {
-      margin-top: -1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 0rem 0rem 0rem;
+
+    .img-container {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 521px) {
+    .service-image {
+      height: 250px;
     }
   }
 `;
 
-export default ServiceAnalytics;
+export default ServicePPC;

@@ -5,27 +5,37 @@ import DigitalMarketing from "../../media/digital-marketing.png";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+// Router
+import { Link } from "react-router-dom";
+// Animation
+import { motion } from "framer-motion";
+import { fade } from "../LogoAnimations";
 
 const HeroDMSection = () => {
   return (
     <HeroContainer>
       <div className="container">
-        <div className="service-text-container">
+        <motion.div
+          variants={fade}
+          initial="hidden"
+          animate="show"
+          className="service-text-container"
+        >
           <h2>Digital Marketing</h2>
           <p>
             Focusing on results, we provide effective digital marketing
             strategies to engage and convert customers.
           </p>
           <div className="button-container">
-            <a className="button">
+            <Link to="/contact" className="button">
               Enquire Now{" "}
               <FontAwesomeIcon
                 className="chevron-right"
                 icon={faChevronRight}
               />
-            </a>
+            </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </HeroContainer>
   );
@@ -127,11 +137,6 @@ const HeroContainer = styled.section`
     justify-content: flex-end;
   }
 
-  .chevron-right {
-    margin-left: 0.4rem;
-    font-size: 1rem;
-  }
-
   @media (max-width: 1700px) {
     &::after {
       width: 95%;
@@ -183,11 +188,34 @@ const HeroContainer = styled.section`
     .service-text-container {
       width: 70%;
     }
-  }
 
-  @media (max-width: 710px) {
     .service-text-container h2 {
       font-size: 3rem;
+    }
+
+    .service-text-container p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 542px) {
+    height: 60vh;
+
+    &::after {
+      width: 100%;
+      left: 0;
+      transform: skewX(0deg);
+    }
+
+    .service-text-container {
+      width: 100%;
+    }
+
+    .service-text-container h2 {
+      width: 70%;
+      margin-right: 30%;
+      font-size: 2.25rem;
     }
   }
 `;

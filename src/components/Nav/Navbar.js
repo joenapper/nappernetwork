@@ -4,8 +4,9 @@ import styled from "styled-components";
 // Components
 import Burger from "./Burger";
 // Images
-// import logo from "../../media/logo.png";
 import Logo from "../../media/nav-logo.png";
+// Router
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -23,9 +24,9 @@ const Navbar = () => {
   return (
     <Header navbar={navbar}>
       <Nav>
-        <a href="https://www.google.com">
-          <img className="logo" src={Logo} alt="" srcset="" />
-        </a>
+        <Link to="/">
+          <img className="logo" src={Logo} alt="Napper Network" />
+        </Link>
         <Burger />
       </Nav>
     </Header>
@@ -87,6 +88,12 @@ const Nav = styled.nav`
 
     a {
       font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .logo {
+      max-width: 200px;
     }
   }
 `;

@@ -45,7 +45,6 @@ const AboutSection = () => {
           initial="hidden"
           src={sample}
           alt=""
-          srcset=""
         />
       </div>
     </About>
