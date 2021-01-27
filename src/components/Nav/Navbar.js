@@ -22,10 +22,11 @@ const Navbar = () => {
   window.addEventListener("scroll", addBackground);
 
   return (
-    <Header navbar={navbar}>
+    <Header navbar={navbar} id="navbar">
       <Nav>
         <Link to="/">
           <img className="logo" src={Logo} alt="Napper Network" />
+          <p>Home</p>
         </Link>
         <Burger />
       </Nav>
@@ -53,6 +54,10 @@ const Nav = styled.nav`
     display: flex;
     /* font-size: 1.1rem; */
     /* letter-spacing: 2px; */
+  }
+
+  a p {
+    display: none;
   }
 
   .logo {
@@ -91,11 +96,26 @@ const Nav = styled.nav`
     }
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 768px) {
+    .logo {
+      display: none;
+    }
+
+    a p {
+      display: block;
+      text-transform: uppercase;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  /* @media (max-width: 550px) {
     .logo {
       max-width: 200px;
     }
-  }
+  } */
 `;
 
 export default Navbar;

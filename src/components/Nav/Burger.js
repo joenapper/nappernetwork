@@ -7,16 +7,26 @@ import RightNav from "./RightNav";
 const Burger = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <div>
+      <MenuText>Menu</MenuText>
       <BurgerIcon open={open} onClick={() => setOpen(!open)}>
         <div></div>
         <div></div>
         <div></div>
       </BurgerIcon>
       <RightNav open={open} />
-    </>
+    </div>
   );
 };
+
+const MenuText = styled.p`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    text-transform: uppercase;
+  }
+`;
 
 const BurgerIcon = styled.div`
   display: none;

@@ -2,6 +2,7 @@
 import GlobalStyle from "./components/GlobalStyle";
 import Navbar from "./components/Nav/Navbar";
 import FooterSection from "./components/FooterSection";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -12,14 +13,16 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 // Router
 import { Switch, Route } from "react-router-dom";
-//import DigitalMarketing from "./pages/DigitalMarketing";
+// Animations
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      {/* ADD MENU TEXT NEXT TO BURGER */}
+      <ScrollTop />
       <Navbar />
+      <ScrollToTopButton />
 
       <Switch>
         <Route path="/" exact>
