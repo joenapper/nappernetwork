@@ -3,78 +3,68 @@ import styled from "styled-components";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
-// Images
-import EmailMarketingImg from "../../../media/email-marketing.png";
 // Animations
 import { motion } from "framer-motion";
-import { fade } from "../../LogoAnimations";
-import { useScroll } from "../../useScroll";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
-const ServiceEmailMarketing = () => {
+const ServiceItem = (props) => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
-    <EmailMarketing>
+    <Item id="service">
       <motion.div
         ref={element}
         variants={fade}
         animate={controls}
         initial="hidden"
-        className="service-text"
+        className="service-image"
       >
-        <h2>Email Marketing</h2>
-        <p>
-          We provide effective marketing strategies to convert prospects into
-          customers and one-time buyers into loyal, returning customers.
-        </p>
-        <h3>We can:</h3>
-        <ul className="we-can">
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>Build an email list full of targeted customers.</p>
-          </li>
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>
-              Optimise your emails for the highest open rate and click through
-              rate.
-            </p>
-          </li>
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>Automate the process of nurturing your leads.</p>
-          </li>
-        </ul>
+        <div
+          className="img-container"
+          style={{ background: props.background }}
+        ></div>
       </motion.div>
       <motion.div
         ref={element2}
         variants={fade}
         animate={controls2}
         initial="hidden"
-        className="service-image"
+        className="service-text"
       >
-        <div className="img-container"></div>
+        <h2>{props.title}</h2>
+        <p>{props.text}</p>
+        <h3>We can:</h3>
+        <ul className="we-can">
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletOne}</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletTwo}</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletThree}</p>
+          </li>
+        </ul>
       </motion.div>
-    </EmailMarketing>
+    </Item>
   );
 };
 
-const EmailMarketing = styled.div`
-  padding: 2rem 0rem;
+const Item = styled.div`
+  padding: 4rem 0rem;
   display: flex;
   align-items: center;
   position: relative;
   color: #374251;
 
-  .service-text {
-    width: 50%;
-    padding-right: 2rem;
-  }
-
   .service-image {
     height: 40vh;
     width: 100%;
-    margin-right: -50%;
+    margin-left: -50%;
     position: relative;
     background-image: linear-gradient(
         216deg,
@@ -127,17 +117,22 @@ const EmailMarketing = styled.div`
   .img-container {
     position: absolute;
     top: 2rem;
-    right: 50%;
+    right: 2rem;
     bottom: 2rem;
-    left: 2rem;
-    background: url(${EmailMarketingImg}) center no-repeat;
-    background-size: cover;
+    left: 50%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .service-text {
+    width: 50%;
+    padding-left: 2rem;
   }
 
   h2 {
     margin-bottom: 2rem;
     font-family: "Kollektif-Bold", sans-serif;
-    text-align: right;
   }
 
   p {
@@ -173,7 +168,6 @@ const EmailMarketing = styled.div`
     .service-image {
       width: 100%;
       margin: 0;
-      order: 1;
     }
 
     .img-container {
@@ -183,7 +177,6 @@ const EmailMarketing = styled.div`
     .service-text {
       width: 100%;
       padding: 0;
-      order: 2;
     }
 
     h2 {
@@ -205,10 +198,6 @@ const EmailMarketing = styled.div`
       height: 250px;
     }
   }
-
-  @media (max-width: 421px) {
-    padding: 0rem;
-  }
 `;
 
-export default ServiceEmailMarketing;
+export default ServiceItem;

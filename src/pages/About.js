@@ -1,11 +1,10 @@
 // Components
-import UnderMaintenance from "../components/UnderMaintenance";
+import HeroSection from "../components/About/HeroSection";
 
 const About = () => {
   return (
     <main>
-      <h1>About</h1>
-      <UnderMaintenance />
+      <HeroSection />
     </main>
   );
 };

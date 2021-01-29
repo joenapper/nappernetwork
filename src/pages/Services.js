@@ -1,6 +1,7 @@
 // Components
-import UnderMaintenance from "../components/UnderMaintenance";
-import HeroDMSection from "../components/DigitalMarketing/HeroDMSection";
+// import UnderMaintenance from "../components/UnderMaintenance";
+// import HeroDMSection from "../components/DigitalMarketing/HeroDMSection";
+import HeroSection from "../components/Services/HeroSection";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
@@ -14,9 +15,7 @@ const Services = () => {
           content="Napper Network is a Sheffield based digital marketing and web development agency."
         />
       </Helmet>
-      <UnderMaintenance />
-      <HeroDMSection />
-      <UnderMaintenance />
+      <HeroSection />
     </main>
   );
 };

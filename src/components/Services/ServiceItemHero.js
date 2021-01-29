@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
 
-const HeroDMSection = () => {
+const ServiceItemHero = (props) => {
   return (
     <HeroContainer>
       <div className="container">
@@ -21,11 +21,8 @@ const HeroDMSection = () => {
           animate="show"
           className="service-text-container"
         >
-          <h2>Digital Marketing</h2>
-          <p>
-            Focusing on results, we provide effective digital marketing
-            strategies to engage and convert customers.
-          </p>
+          <h2>{props.title}</h2>
+          <p>{props.text}</p>
           <div className="button-container">
             <Link to="/contact" className="button">
               Enquire Now{" "}
@@ -222,4 +219,4 @@ const HeroContainer = styled.section`
   }
 `;
 
-export default HeroDMSection;
+export default ServiceItemHero;

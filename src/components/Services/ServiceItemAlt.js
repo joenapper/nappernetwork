@@ -3,73 +3,73 @@ import styled from "styled-components";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDotCircle } from "@fortawesome/free-solid-svg-icons";
-// Images
-import AnalyticsImg from "../../../media/analytics.png";
 // Animations
 import { motion } from "framer-motion";
-import { fade } from "../../LogoAnimations";
-import { useScroll } from "../../useScroll";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
-const ServicePPC = () => {
+const ServiceItemAlt = (props) => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
-    <PPC>
+    <ItemAlt>
       <motion.div
         ref={element}
         variants={fade}
         animate={controls}
         initial="hidden"
-        className="service-image"
+        className="service-text"
       >
-        <div className="img-container"></div>
+        <h2>{props.title}</h2>
+        <p>{props.text}</p>
+        <h3>We can:</h3>
+        <ul className="we-can">
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletOne}</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletTwo}</p>
+          </li>
+          <li>
+            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
+            <p>{props.bulletThree}</p>
+          </li>
+        </ul>
       </motion.div>
       <motion.div
         ref={element2}
         variants={fade}
         animate={controls2}
         initial="hidden"
-        className="service-text"
+        className="service-image"
       >
-        <h2>Pay-Per-Click Advertising</h2>
-        <p>
-          We create successful 'PPC' campaigns to drive traffic to your website,
-          increase conversions and boost brand recognition.
-        </p>
-        <h3>We can:</h3>
-        <ul className="we-can">
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>Analyse competitors and identify targeteted keywords.</p>
-          </li>
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>
-              Write effective ad copy to increase quality score and reduce cost
-              per acquisition.
-            </p>
-          </li>
-          <li>
-            <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>Build PPC landing pages optimised for conversion.</p>
-          </li>
-        </ul>
+        <div
+          className="img-container"
+          style={{ background: props.background }}
+        ></div>
       </motion.div>
-    </PPC>
+    </ItemAlt>
   );
 };
 
-const PPC = styled.div`
-  padding: 4rem 0rem;
+const ItemAlt = styled.div`
+  padding: 2rem 0rem;
   display: flex;
   align-items: center;
   position: relative;
   color: #374251;
 
+  .service-text {
+    width: 50%;
+    padding-right: 2rem;
+  }
+
   .service-image {
     height: 40vh;
     width: 100%;
-    margin-left: -50%;
+    margin-right: -50%;
     position: relative;
     background-image: linear-gradient(
         216deg,
@@ -122,21 +122,18 @@ const PPC = styled.div`
   .img-container {
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 50%;
     bottom: 2rem;
-    left: 50%;
-    background: url(${AnalyticsImg}) center no-repeat;
-    background-size: cover;
-  }
-
-  .service-text {
-    width: 50%;
-    padding-left: 2rem;
+    left: 2rem;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
 
   h2 {
     margin-bottom: 2rem;
     font-family: "Kollektif-Bold", sans-serif;
+    text-align: right;
   }
 
   p {
@@ -172,6 +169,7 @@ const PPC = styled.div`
     .service-image {
       width: 100%;
       margin: 0;
+      order: 1;
     }
 
     .img-container {
@@ -181,6 +179,7 @@ const PPC = styled.div`
     .service-text {
       width: 100%;
       padding: 0;
+      order: 2;
     }
 
     h2 {
@@ -189,8 +188,6 @@ const PPC = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 4rem 0rem 0rem 0rem;
-
     .img-container {
       top: 0;
       right: 0;
@@ -204,6 +201,10 @@ const PPC = styled.div`
       height: 250px;
     }
   }
+
+  @media (max-width: 421px) {
+    padding: 0rem;
+  }
 `;
 
-export default ServicePPC;
+export default ServiceItemAlt;

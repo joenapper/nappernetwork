@@ -21,9 +21,8 @@ const ServicesSection = () => {
   return (
     <Services>
       <div className="container">
-        {/* <h2>What We Do</h2> */}
         <div className="row">
-          <motion.a
+          <motion.div
             ref={element}
             variants={fade}
             animate={controls}
@@ -71,9 +70,9 @@ const ServicesSection = () => {
                 <button>Find Out More</button>
               </li> */}
             </Link>
-          </motion.a>
+          </motion.div>
 
-          <motion.a
+          <motion.div
             ref={element2}
             variants={fade}
             animate={controls2}
@@ -100,9 +99,9 @@ const ServicesSection = () => {
                 be replicated by "out-the-box" alternatives.
               </p>
             </Link>
-          </motion.a>
+          </motion.div>
 
-          <motion.a
+          <motion.div
             ref={element3}
             variants={fade}
             animate={controls3}
@@ -129,7 +128,7 @@ const ServicesSection = () => {
                 be replicated by "out-the-box" alternatives.
               </p>
             </Link>
-          </motion.a>
+          </motion.div>
         </div>
       </div>
     </Services>

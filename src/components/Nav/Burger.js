@@ -7,7 +7,7 @@ import RightNav from "./RightNav";
 const Burger = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <div style={flex}>
       <MenuText>Menu</MenuText>
       <BurgerIcon open={open} onClick={() => setOpen(!open)}>
         <div></div>
@@ -19,12 +19,18 @@ const Burger = () => {
   );
 };
 
+const flex = {
+  display: "flex",
+  alignItems: "center",
+};
+
 const MenuText = styled.p`
   display: none;
 
   @media (max-width: 768px) {
     display: block;
     text-transform: uppercase;
+    z-index: 1;
   }
 `;
 

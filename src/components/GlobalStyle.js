@@ -17,7 +17,7 @@ body {
 
 @font-face {
     font-family: "Kollektif";
-    src: url(../fonts/Kollektif.ttf);
+    src: url("../fonts/Kollektif.ttf") format('ttf');
 }
 
 ul {
