@@ -3,11 +3,14 @@ import styled from "styled-components";
 // Router
 import { Link } from "react-router-dom";
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, setOpen }) => {
+  const closeNav = () => setOpen(false);
   return (
     <NavList open={open}>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" onClick={closeNav}>
+          Home
+        </Link>
       </li>
       <li>
         <Link to="/about">About</Link>
