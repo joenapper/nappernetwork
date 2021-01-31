@@ -118,7 +118,6 @@ const HeroContainer = styled.section`
   .service-text-container h2 {
     font-size: 6rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
   }
 
   .service-text-container p {

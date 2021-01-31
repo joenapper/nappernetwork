@@ -19,6 +19,16 @@ const Banner = styled.section`
   padding: 4rem 0;
   text-align: center;
 
+  .extended-title {
+    margin: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .extended-title {
+      font-size: 2.5rem;
+    }
+  }
+
   @media (max-width: 1165px) {
     .container {
       width: 80%;

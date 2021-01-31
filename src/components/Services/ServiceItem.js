@@ -131,7 +131,6 @@ const Item = styled.div`
   }
 
   h2 {
-    margin-bottom: 2rem;
     font-family: "Kollektif-Bold", sans-serif;
   }
 

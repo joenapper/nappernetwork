@@ -1,9 +1,12 @@
 // Components
+import HeroSection from "../components/Blog/HeroSection";
+import BlogsContainer from "../components/Blog/BlogsContainer";
 
 const About = () => {
   return (
     <main>
-      <h1>Blog</h1>
+      <HeroSection />
+      <BlogsContainer />
     </main>
   );
 };

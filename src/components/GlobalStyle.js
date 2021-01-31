@@ -67,11 +67,12 @@ button:hover {
 h2 {
     font-size: 3rem;
     font-family: "Kollektif", sans-serif;
+    margin-bottom: 2rem;
 }
 
-/* .primary {
+.primary {
     color: #374251
-} */
+}
 
 .secondary {
     color: #8bd0f2;
@@ -101,11 +102,6 @@ h2 {
     }
 } */
 
-@media (max-width: 1024px) {
-    .extended-title {
-        font-size: 2.5rem;
-    }
-}
 
 @media (max-width: 768px) {
     .container {

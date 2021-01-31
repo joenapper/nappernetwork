@@ -78,10 +78,6 @@ const About = styled.section`
     width: 40%;
   }
 
-  h2 {
-    margin-bottom: 2rem;
-  }
-
   p {
     margin-bottom: 1rem;
   }

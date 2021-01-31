@@ -66,7 +66,7 @@ const HeroContainer = styled(motion.main)`
 
   h2 {
     font-size: 5rem;
-    margin-right: 1rem;
+    margin: 0rem 1rem 0rem 0rem;
   }
 
   .Typewriter {

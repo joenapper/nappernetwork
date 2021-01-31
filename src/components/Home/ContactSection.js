@@ -96,7 +96,6 @@ const Contact = styled.section`
 
   h2 {
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   form {
