@@ -2,6 +2,8 @@
 import HeroSection from "../components/Blog/HeroSection";
 import BlogsContainer from "../components/Blog/BlogsContainer";
 import ContactSection from "../components/Home/ContactSection";
+// Helmet
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (

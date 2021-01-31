@@ -2,6 +2,8 @@
 import HeroSection from "../components/Contact/HeroSection";
 import MainContactSection from "../components/Contact/MainContactSection";
 import AltContactSection from "../components/Contact/AltContactSection";
+// Helmet
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
