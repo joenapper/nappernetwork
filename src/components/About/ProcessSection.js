@@ -15,7 +15,7 @@ const ProcessSection = () => {
         <h2>
           The <span className="secondary">Process</span>
         </h2>
-        <div class="step">
+        <div className="step">
           <h3>
             <FontAwesomeIcon icon={faObjectGroup} className="step-icon" />{" "}
             Design
@@ -28,8 +28,8 @@ const ProcessSection = () => {
             to your business.
           </p>
         </div>
-        <div class="step step2">
-          <h3 class="right">
+        <div className="step step2">
+          <h3 className="right">
             Develop{" "}
             <FontAwesomeIcon icon={faLaptopCode} className="step-icon" />
           </h3>
@@ -41,7 +41,7 @@ const ProcessSection = () => {
             SEO strategies.
           </p>
         </div>
-        <div class="step">
+        <div className="step">
           <h3>
             <FontAwesomeIcon icon={faServer} className="step-icon" /> Deploy
           </h3>

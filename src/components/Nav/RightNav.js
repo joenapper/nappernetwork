@@ -21,9 +21,9 @@ const RightNav = ({ open, setOpen }) => {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/careers">Careers</Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/contact">Contact</Link>
       </li>

@@ -1,11 +1,23 @@
 // Components
+import HeroSection from "../components/Contact/HeroSection";
+import MainContactSection from "../components/Contact/MainContactSection";
+import AltContactSection from "../components/Contact/AltContactSection";
 
-const About = () => {
+const Contact = () => {
   return (
     <main>
-      <h1>Contact</h1>
+      <Helmet>
+        <title>Napper Network - Contact</title>
+        <meta
+          name="description"
+          content="Napper Network is a Sheffield based digital marketing and web development agency."
+        />
+      </Helmet>
+      <HeroSection />
+      <MainContactSection />
+      <AltContactSection />
     </main>
   );
 };
 
-export default About;
+export default Contact;

@@ -1,13 +1,16 @@
 // Styled
 import styled from "styled-components";
+// Components
+import Wave from "../Wave";
 // Animation
 import { motion } from "framer-motion";
-import { container, fade } from "../LogoAnimations";
+import { container } from "../LogoAnimations";
 
 const HeroSection = () => {
   return (
     <HeroContainer variants={container} initial="hidden" animate="show">
-      <motion.h1 variants={fade}>Blog</motion.h1>
+      {/* <motion.h1 variants={fade}>Blog</motion.h1> */}
+      <Wave />
     </HeroContainer>
   );
 };

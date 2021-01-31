@@ -11,30 +11,16 @@ import Typewriter from "typewriter-effect";
 const HeroSection = () => {
   return (
     <HeroContainer variants={container} initial="hidden" animate="show">
+      {/* <motion.h1 variants={fade}>Contact</motion.h1> */}
       <div className="hero-wrapper">
-        <motion.h2 variants={fade}>We</motion.h2>
+        <motion.h2 variants={fade}>Get in touch!</motion.h2>
+        {/* <p>We would love to hear from you</p> */}
+        {/* <p>Get in touch!</p> */}
         <Typewriter
-          options={{
-            autoStart: true,
-            loop: true,
-          }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("Create")
+              .typeString("We would love to hear from you")
               .pauseFor(2000)
-              .deleteAll()
-              .typeString("Analyse")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("Strategise")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("Design")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("Develop")
-              .pauseFor(2000)
-              .deleteAll()
               .start();
           }}
         />
@@ -60,6 +46,7 @@ const HeroContainer = styled(motion.main)`
     left: 50%;
     transform: translate(50%, 50%); */
     display: flex;
+    flex-direction: column;
     height: 100%;
     /* text-align: center; */
     justify-content: center;
@@ -74,7 +61,7 @@ const HeroContainer = styled(motion.main)`
   }
 
   .Typewriter {
-    font-size: 5rem;
+    /* font-size: 5rem; */
     color: #8bd0f2;
   }
 `;
