@@ -102,7 +102,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-input[type=search] {
+input[type=submit] {
    -moz-appearance: none;/* older firefox */
    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
    appearance: none; /* rest */
