@@ -65,9 +65,6 @@ const ServicesSection = () => {
               </li>
               <li>
                 <p>Ongoing Support</p>
-              </li>
-              <li>
-                <button>Find Out More</button>
               </li> */}
             </Link>
           </motion.div>

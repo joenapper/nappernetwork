@@ -29,28 +29,28 @@ const WebDevelopment = () => {
       />
       <ServiceDetail>
         <div className="container">
-          <ServiceTitle title="Digital Marketing Services" />
+          <ServiceTitle title="Web Development Services" />
           <ServiceItem
-            title="SEO"
+            title="Bespoke Websites"
             text="We provide effective search engine optimisation strategies to improve
         the visablility of your website."
-            bulletOne="Provide a detailed SEO audit of your Website."
-            bulletTwo="Implement key words to gain more site visits."
-            bulletThree="Help you understand how SEO works."
+            bulletOne="Use modern technologies to create fast and powerful websites."
+            bulletTwo="Work with you to ensure content improves SEO and boosts interactivity."
+            bulletThree="Deliver a completely unique website to stay ahead of the competition."
             background={`url(${SEOImg})`}
           />
 
           <ServiceItemAlt
-            title="Email Marketing"
+            title="Modern Web Design"
             text="We provide effective marketing strategies to convert prospects into customers and one-time buyers into loyal, returning customers."
-            bulletOne="Build an email list full of targeted customers."
+            bulletOne="Provide detailed wireframes of your site before production begins."
             bulletTwo="Optimise your emails for the highest open rate and click through rate."
             bulletThree="Automate the process of nurturing your leads."
             background={`url(${EmailMarketingImg})`}
           />
 
           <ServiceItem
-            title="Pay-Per-Click Advertising"
+            title="Hosting &#38; Maintenance"
             text="We create successful 'PPC' campaigns to drive traffic to your website,
           increase conversions and boost brand recognition."
             bulletOne="Analyse competitors and identify targeteted keywords."

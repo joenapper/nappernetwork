@@ -102,6 +102,12 @@ h2 {
     flex-wrap: wrap;
 }
 
+input[type=search] {
+   -moz-appearance: none;/* older firefox */
+   -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+   appearance: none; /* rest */
+}
+
 @media (max-width: 1400px) {
     .container {
         width: 70%
