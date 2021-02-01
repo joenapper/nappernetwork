@@ -13,7 +13,7 @@ const ProcessSection = () => {
     <Process>
       <div className="container">
         <h2>
-          The <span className="secondary">Process</span>
+          The <span>Process</span>
         </h2>
         <div className="step">
           <h3>
@@ -57,12 +57,16 @@ const ProcessSection = () => {
 };
 
 const Process = styled.section`
-  background-color: #fff;
+  background-color: #8bd0f2;
   color: #374251;
   padding: 4rem 0;
 
   h2 {
     text-align: center;
+  }
+
+  span {
+    color: #fff;
   }
 
   h3 {
@@ -79,6 +83,8 @@ const Process = styled.section`
   .step p {
     padding: 0 5%;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   .step2 {
@@ -89,6 +95,24 @@ const Process = styled.section`
   .step-icon {
     font-size: 1em;
     color: #374251;
+  }
+
+  @media (max-width: 550px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .step {
+      width: 100%;
+    }
+
+    .step p {
+      font-size: 1rem;
+    }
+
+    .step2 {
+      margin-left: 0%;
+    }
   }
 `;
 

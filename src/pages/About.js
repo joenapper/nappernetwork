@@ -1,7 +1,7 @@
 // Components
 import HeroSection from "../components/About/HeroSection";
 import AboutSection from "../components/About/AboutSection";
-import ServicesSection from "../components/About/ServicesSection";
+// import ServicesSection from "../components/About/ServicesSection";
 import ProcessSection from "../components/About/ProcessSection";
 import ContactSection from "../components/Home/ContactSection";
 // Helmet
@@ -19,7 +19,7 @@ const About = () => {
       </Helmet>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <ProcessSection />
       <ContactSection />
     </main>

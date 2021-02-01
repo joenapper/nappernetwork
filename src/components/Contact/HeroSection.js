@@ -2,28 +2,39 @@
 import styled from "styled-components";
 // Components
 import Wave from "../Wave";
+// import MainContactSection from "./MainContactSection";
 // Animation
 import { motion } from "framer-motion";
 import { container, fade } from "../LogoAnimations";
-// Typewriter
-import Typewriter from "typewriter-effect";
+// Font-Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faPinterest,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const HeroSection = () => {
   return (
     <HeroContainer variants={container} initial="hidden" animate="show">
-      {/* <motion.h1 variants={fade}>Contact</motion.h1> */}
-      <div className="hero-wrapper">
-        <motion.h2 variants={fade}>Get in touch!</motion.h2>
-        {/* <p>We would love to hear from you</p> */}
-        {/* <p>Get in touch!</p> */}
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("We would love to hear from you")
-              .pauseFor(2000)
-              .start();
-          }}
-        />
+      <div className="container hero-wrapper">
+        <motion.div variants={fade}>
+          <FontAwesomeIcon className="alt-icon" icon={faFacebook} />
+        </motion.div>
+        <motion.div variants={fade}>
+          <FontAwesomeIcon className="alt-icon" icon={faTwitter} />
+        </motion.div>
+        <motion.div variants={fade}>
+          <FontAwesomeIcon className="alt-icon" icon={faInstagram} />
+        </motion.div>
+        <motion.div variants={fade}>
+          <FontAwesomeIcon className="alt-icon" icon={faLinkedinIn} />
+        </motion.div>
+        <motion.div variants={fade}>
+          <FontAwesomeIcon className="alt-icon" icon={faPinterest} />
+        </motion.div>
       </div>
       <Wave />
     </HeroContainer>
@@ -41,18 +52,22 @@ const HeroContainer = styled(motion.main)`
   );
 
   .hero-wrapper {
-    /* position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%); */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 100%;
-    /* text-align: center; */
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
     font-family: "Kollektif";
+    /* ss */
+    /* position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    background-color: #fff;
+    color: #8bd0f2;
+    width: 60%;
+    z-index: 1; */
   }
 
   h2 {
@@ -60,9 +75,13 @@ const HeroContainer = styled(motion.main)`
     margin: 0rem 1rem 0rem 0rem;
   }
 
-  .Typewriter {
-    /* font-size: 5rem; */
+  /* .Typewriter {
+  
     color: #8bd0f2;
+  } */
+
+  .alt-icon {
+    font-size: 4rem;
   }
 `;
 

@@ -13,19 +13,27 @@ const RightNav = ({ open, setOpen }) => {
         </Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" onClick={closeNav}>
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/services">Services</Link>
-      </li>
-      <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/services" onClick={closeNav}>
+          Services
+        </Link>
       </li>
       {/* <li>
-        <Link to="/careers">Careers</Link>
+        <Link to="/blog" onClick={closeNav}>
+          Blog
+        </Link>
+      </li> */}
+      {/* <li>
+        <Link to="/careers" onClick={closeNav}>Careers</Link>
       </li> */}
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" onClick={closeNav}>
+          Contact
+        </Link>
       </li>
     </NavList>
   );

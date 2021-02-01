@@ -26,58 +26,60 @@ const MainContactSection = () => {
     e.target.reset();
   }
   return (
-    <MainContact>
-      <div className="container">
-        <h2>Send us a message</h2>
-        <motion.form
-          ref={element}
-          variants={fade}
-          animate={controls}
-          initial="hidden"
-          onSubmit={sendEmail}
-        >
-          <div className="row">
-            <div className="inputs">
-              <input
-                type="text"
-                id="name"
-                placeholder="Your Name *"
-                name="name"
-                required
-              />
-              <input
-                type="email"
-                id="email"
-                placeholder="Your Email *"
-                name="email"
-                required
-              />
-              <input
-                type="text"
-                id="company"
-                placeholder="Your Company (If Applicable)"
-                name="company"
-              />
-              <input
-                type="number"
-                id="telephone"
-                placeholder="Your Telephone Number"
-                name="telephone"
-              />
-            </div>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="What would you like to talk about?"
-              required
-            ></textarea>
-          </div>
-          <div className="button-container">
-            <input className="button" type="submit" value="Send Message" />
-          </div>
-        </motion.form>
-      </div>
+    <MainContact id="service">
+      <h2 className="secondary">We would love to hear from you.</h2>
+      <motion.form
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        onSubmit={sendEmail}
+      >
+        <input
+          className="info"
+          type="text"
+          id="name"
+          placeholder="Your Name *"
+          name="name"
+          required
+        />
+        <input
+          className="info"
+          type="email"
+          id="email"
+          placeholder="Your Email *"
+          name="email"
+          required
+        />
+        <input
+          className="info"
+          type="text"
+          id="company"
+          placeholder="Your Company (If Applicable)"
+          name="company"
+        />
+        <input
+          className="info"
+          type="number"
+          id="telephone"
+          placeholder="Your Telephone Number"
+          name="telephone"
+        />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="What would you like to talk about?"
+          required
+        ></textarea>
+        <div className="button-container">
+          <input
+            className="button button-alt"
+            type="submit"
+            value="Send Message"
+          />
+        </div>
+      </motion.form>
     </MainContact>
   );
 };
@@ -85,29 +87,23 @@ const MainContactSection = () => {
 const MainContact = styled.section`
   padding: 4rem 0rem;
   color: #374251;
-  background-color: #fff;
 
-  .inputs {
+  h2 {
+    text-align: center;
+  }
+
+  form {
     display: flex;
     flex-direction: column;
-    width: 45%;
   }
 
+  .info,
   textarea {
-    /* width: 50%; */
-    flex-grow: 1;
-    margin-left: 1rem;
-  }
-
-  .row input,
-  textarea {
-    padding: 1rem 0rem;
-    margin-bottom: 1rem;
+    width: 50%;
+    padding: 1rem;
+    margin: 0rem auto 1rem auto;
     background: none;
     border: 1px solid #374251;
-    /* border: none; */
-    /* outline: none; */
-    /* border-bottom: 1px solid black; */
     font-family: "Montserrat", sans-serif;
     color: #374251;
     font-size: 1rem;
@@ -142,13 +138,15 @@ const MainContact = styled.section`
     -webkit-box-shadow: 0 0 0 30px #374251 inset !important;
   }
 
-  /* textarea {
+  textarea {
     resize: vertical;
     min-height: 100px;
     max-height: 600px;
-  } */
+  }
 
   .button-container {
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: flex-end;
   }

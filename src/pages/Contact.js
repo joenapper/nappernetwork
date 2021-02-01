@@ -1,7 +1,9 @@
 // Components
 import HeroSection from "../components/Contact/HeroSection";
-import MainContactSection from "../components/Contact/MainContactSection";
-import AltContactSection from "../components/Contact/AltContactSection";
+// import MainContactSection from "../components/Contact/MainContactSection";
+// import AltContactSection from "../components/Contact/AltContactSection";
+// import ContactTitle from "../components/Contact/ContactTitle";
+import MainContact from "../components/Contact/MainContact";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
@@ -16,8 +18,10 @@ const Contact = () => {
         />
       </Helmet>
       <HeroSection />
-      <MainContactSection />
-      <AltContactSection />
+      <MainContact />
+      {/* <ContactTitle /> */}
+      {/* <MainContactSection /> */}
+      {/* <AltContactSection /> */}
     </main>
   );
 };

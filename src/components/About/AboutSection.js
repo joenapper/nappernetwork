@@ -1,4 +1,7 @@
+// Styled
 import styled from "styled-components";
+// Router
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -10,7 +13,8 @@ const AboutSection = () => {
           take our time to understand your business so we can design and deliver
           a tailored, quality approach for your company, big or small.
           <br />
-          If you want clear results, check out our services, and get in touch.
+          If you want clear results, check out our services, and{" "}
+          <Link to="/contact">get in touch.</Link>
         </p>
       </div>
     </About>
@@ -20,17 +24,21 @@ const AboutSection = () => {
 const About = styled.section`
   background: #fff;
   color: #374251;
-  /* padding: 4rem 0rem; */
-  height: 20vh;
-  position: relative;
+  padding: 4rem 0rem;
+  min-height: 20vh;
+  font-size: 1.2rem;
 
   p {
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     line-height: 1.5;
+  }
+
+  a {
+    color: #8bd0f2;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 1rem;
   }
 `;
 

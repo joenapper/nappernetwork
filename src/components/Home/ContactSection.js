@@ -117,6 +117,12 @@ const Contact = styled.section`
     flex-basis: 45%;
   }
 
+  input {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
   input::placeholder,
   textarea::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -154,6 +160,15 @@ const Contact = styled.section`
   .button-container {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .button {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .button:hover {
+    background-color: #374251;
   }
 
   @media (max-width: 1165px) {

@@ -77,6 +77,31 @@ const HeroContainer = styled(motion.main)`
     font-size: 5rem;
     color: #8bd0f2;
   }
+
+  @media (max-width: 1000px) {
+    height: 70vh;
+
+    h2,
+    .Typewriter {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
+
+    h2,
+    .Typewriter {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h2,
+    .Typewriter {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export default HeroSection;

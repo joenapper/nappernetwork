@@ -46,17 +46,29 @@ button:hover {
     cursor: pointer;
     padding: 1rem 2rem;
     background-color: #fff;
-    border-color: #fff;
+    border: 1px solid #fff;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #374251;
     font-family: 'Kollektif', sans-serif;
-    transition: 0.3s ease-in-out
+    transition: 0.3s ease-in-out;
+}
+
+.button-alt {
+    background-color: #374251;
+    border: 1px solid #374251;
+    color: #fff;
+    display: block;
 }
 
 .button:hover {
     background-color: #374251;
     color: #fff;
+}
+
+.button-alt:hover {
+    background-color: #fff;
+    color: #374251;
 }
 
 .chevron-right {

@@ -7,7 +7,9 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import WebDevelopment from "./pages/WebDevelopment";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import SocialMedia from "./pages/SocialMedia";
 import Blog from "./pages/Blog";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
@@ -36,8 +38,14 @@ function App() {
         <Route path="/services">
           <Services />
         </Route>
+        <Route path="/web-development">
+          <WebDevelopment />
+        </Route>
         <Route path="/digital-marketing">
           <DigitalMarketing />
+        </Route>
+        <Route path="/social-media">
+          <SocialMedia />
         </Route>
 
         <Route path="/blog">
