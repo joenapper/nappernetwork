@@ -82,7 +82,6 @@ const ContactSection = () => {
             required
           ></textarea>
           <div className="button-container">
-            {/* <button>Send Message</button> */}
             <input className="button" type="submit" value="Send Message" />
           </div>
         </motion.form>

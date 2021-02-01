@@ -1,8 +1,7 @@
 // Styled
 import styled from "styled-components";
 // Images
-// import sample from "../../media/sample.png";
-import sample from "../../media/why-us-img.png";
+import WhyUsImg from "../../media/why-us-img.png";
 // Animations
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
@@ -53,7 +52,7 @@ const AboutSection = () => {
             variants={fade}
             animate={controls2}
             initial="hidden"
-            src={sample}
+            src={WhyUsImg}
             alt=""
           />
         </div>
@@ -111,19 +110,6 @@ const About = styled.section`
   color: #374251;
   padding: 4rem 0;
   position: relative;
-
-  /* ::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #7f8e94;
-    width: 60%;
-    top: 4rem;
-    bottom: 4rem;
-    left: 50%;
-    transform: skewX(5deg);
-    z-index: 0;
-  } */
 
   .container {
     display: flex;

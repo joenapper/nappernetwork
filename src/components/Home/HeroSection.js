@@ -1,6 +1,6 @@
 // Styled
 import styled from "styled-components";
-// MediaS
+// Media
 import LogoInfinite from "../../media/napper-network-infinite.png";
 import LogoMainText from "../../media/napper-network-text-globe.png";
 import LogoSubText from "../../media/napper-network-text-2.png";

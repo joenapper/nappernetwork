@@ -55,13 +55,8 @@ const HeroContainer = styled(motion.main)`
   );
 
   .hero-wrapper {
-    /* position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%); */
     display: flex;
     height: 100%;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
     text-transform: uppercase;

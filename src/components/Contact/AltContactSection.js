@@ -2,7 +2,6 @@
 import styled from "styled-components";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faTwitter,

@@ -1,5 +1,4 @@
 // Styled
-// Styled
 import styled from "styled-components";
 // Components
 import ServiceTitle from "../Services/ServiceTitle";

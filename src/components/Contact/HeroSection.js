@@ -2,7 +2,6 @@
 import styled from "styled-components";
 // Components
 import Wave from "../Wave";
-// import MainContactSection from "./MainContactSection";
 // Animation
 import { motion } from "framer-motion";
 import { container, fade } from "../LogoAnimations";
@@ -53,32 +52,17 @@ const HeroContainer = styled(motion.main)`
 
   .hero-wrapper {
     display: flex;
-    /* flex-direction: column; */
     height: 100%;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
     font-family: "Kollektif";
-    /* ss */
-    /* position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 25%);
-    background-color: #fff;
-    color: #8bd0f2;
-    width: 60%;
-    z-index: 1; */
   }
 
   h2 {
     font-size: 5rem;
     margin: 0rem 1rem 0rem 0rem;
   }
-
-  /* .Typewriter {
-  
-    color: #8bd0f2;
-  } */
 
   .alt-icon {
     font-size: 4rem;

@@ -6,7 +6,6 @@ import RightNav from "./RightNav";
 
 const Burger = () => {
   const [open, setOpen] = useState(false);
-  //const closeNav = () => setOpen(false);
   return (
     <div style={flex}>
       <MenuText>Menu</MenuText>

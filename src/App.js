@@ -2,7 +2,7 @@
 import GlobalStyle from "./components/GlobalStyle";
 import Navbar from "./components/Nav/Navbar";
 import FooterSection from "./components/FooterSection";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+// import ScrollToTopButton from "./components/ScrollToTopButton";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -24,7 +24,7 @@ function App() {
       <GlobalStyle />
       <ScrollTop />
       <Navbar />
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
 
       <Switch>
         <Route path="/" exact>
