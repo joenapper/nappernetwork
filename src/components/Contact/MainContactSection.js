@@ -110,45 +110,51 @@ const MainContact = styled.section`
     flex-basis: 45%;
   }
 
-  input::placeholder,
-  textarea::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #374251;
-    opacity: 1; /* Firefox */
-  }
-
-  input:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #374251;
-  }
-
-  input::-ms-input-placeholder,
-  textarea::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #374251;
-  }
-
-  /* Removes chrome defaults from autocomplete */
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px #374251 inset !important;
-    -webkit-box-shadow: 0 0 0 30px #374251 inset !important;
-  }
-
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-    max-height: 600px;
-  }
-
   .button-container {
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media (max-width: 1300px) {
+    .info,
+    textarea {
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .info,
+    textarea {
+      width: 70%;
+    }
+
+    .button-container {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .info,
+    textarea {
+      width: 80%;
+    }
+
+    .button-container {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .info,
+    textarea {
+      width: 100%;
+    }
+
+    .button-container {
+      width: 100%;
+    }
   }
 `;
 

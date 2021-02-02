@@ -11,7 +11,7 @@ import Typewriter from "typewriter-effect";
 const HeroSection = () => {
   return (
     <HeroContainer variants={container} initial="hidden" animate="show">
-      <div className="hero-wrapper">
+      <motion.div variants={fade} className="hero-wrapper">
         <motion.h2 variants={fade}>We</motion.h2>
         <Typewriter
           options={{
@@ -20,25 +20,28 @@ const HeroSection = () => {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("Create")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("Analyse")
-              .pauseFor(2000)
-              .deleteAll()
-              .typeString("Strategise")
-              .pauseFor(2000)
-              .deleteAll()
               .typeString("Design")
-              .pauseFor(2000)
+              .pauseFor(1500)
               .deleteAll()
               .typeString("Develop")
-              .pauseFor(2000)
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString("Analyse")
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString("Strategise")
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString("Promote")
+              .pauseFor(1500)
+              .deleteAll()
+              .typeString("Create")
+              .pauseFor(1500)
               .deleteAll()
               .start();
           }}
         />
-      </div>
+      </motion.div>
       <Wave />
     </HeroContainer>
   );
@@ -71,6 +74,7 @@ const HeroContainer = styled(motion.main)`
   .Typewriter {
     font-size: 5rem;
     color: #8bd0f2;
+    font-family: "Kollektif";
   }
 
   @media (max-width: 1000px) {

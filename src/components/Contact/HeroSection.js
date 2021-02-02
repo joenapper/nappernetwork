@@ -59,13 +59,32 @@ const HeroContainer = styled(motion.main)`
     font-family: "Kollektif";
   }
 
-  h2 {
-    font-size: 5rem;
-    margin: 0rem 1rem 0rem 0rem;
-  }
-
   .alt-icon {
     font-size: 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    height: 70vh;
+  }
+
+  @media (max-width: 925px) {
+    .alt-icon {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
+
+    .alt-icon {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .alt-icon {
+      font-size: 2rem;
+    }
   }
 `;
 

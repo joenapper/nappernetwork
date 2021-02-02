@@ -7,6 +7,7 @@ import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
 // Images
+import DigitalMarketingHero from "../media/digital-marketing.png";
 import SEOImg from "../media/seo.png";
 import EmailMarketingImg from "../media/email-marketing.png";
 import AnalyticsImg from "../media/analytics.png";
@@ -26,6 +27,7 @@ const DigitalMarketing = () => {
       <ServiceItemHero
         title="Digital Marketing"
         text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."
+        background={`url(${DigitalMarketingHero})`}
       />
       <ServiceDetail>
         <div className="container">

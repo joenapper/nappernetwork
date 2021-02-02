@@ -133,7 +133,8 @@ const About = styled.section`
   }
 
   .img-container {
-    width: 40%;
+    width: 35%;
+    margin-left: 5%;
     display: flex;
     justify-content: flex-end;
   }
@@ -143,14 +144,32 @@ const About = styled.section`
     z-index: 1;
   }
 
-  @media (max-width: 1165px) {
-    .container {
-      flex-direction: column;
+  @media (max-width: 1170px) {
+    .about-text {
+      width: 55%;
     }
 
-    .about-text,
+    .img-container {
+      width: 40%;
+      margin-left: 5%;
+    }
+    /* .container {
+      flex-direction: column;
+    } */
+
+    /* .about-text,
     img {
       width: 100%;
+    } */
+  }
+
+  @media (max-width: 1025px) {
+    .about-text {
+      width: 100%;
+    }
+
+    .img-container {
+      display: none;
     }
   }
 `;

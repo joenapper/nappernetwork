@@ -7,15 +7,34 @@ import {
   faLaptopCode,
   faServer,
 } from "@fortawesome/free-solid-svg-icons";
+// Animation
+import { motion } from "framer-motion";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
 const ProcessSection = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
   return (
     <Process>
       <div className="container">
-        <h2>
+        <motion.h2
+          ref={element}
+          variants={fade}
+          animate={controls}
+          initial="hidden"
+        >
           The <span>Process</span>
-        </h2>
-        <div className="step">
+        </motion.h2>
+        <motion.div
+          ref={element2}
+          variants={fade}
+          animate={controls2}
+          initial="hidden"
+          className="step"
+        >
           <h3>
             <FontAwesomeIcon icon={faObjectGroup} className="step-icon" />{" "}
             Design
@@ -27,8 +46,14 @@ const ProcessSection = () => {
             specific plan. We will then create and deliver a proposal tailored
             to your business.
           </p>
-        </div>
-        <div className="step step2">
+        </motion.div>
+        <motion.div
+          ref={element3}
+          variants={fade}
+          animate={controls3}
+          initial="hidden"
+          className="step step2"
+        >
           <h3 className="right">
             Develop{" "}
             <FontAwesomeIcon icon={faLaptopCode} className="step-icon" />
@@ -40,8 +65,14 @@ const ProcessSection = () => {
             return on investment. We will also create long-term marketing and
             SEO strategies.
           </p>
-        </div>
-        <div className="step">
+        </motion.div>
+        <motion.div
+          ref={element4}
+          variants={fade}
+          animate={controls4}
+          initial="hidden"
+          className="step"
+        >
           <h3>
             <FontAwesomeIcon icon={faServer} className="step-icon" /> Deploy
           </h3>
@@ -50,7 +81,7 @@ const ProcessSection = () => {
             you and continue to monitor our services and strategies to keep up
             with the dynamic platforms.
           </p>
-        </div>
+        </motion.div>
       </div>
     </Process>
   );

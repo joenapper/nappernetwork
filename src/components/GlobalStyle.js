@@ -102,24 +102,65 @@ h2 {
     flex-wrap: wrap;
 }
 
+/* General Form Support */
 input[type=submit] {
-   -moz-appearance: none;/* older firefox */
-   -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+   -moz-appearance: none;/* Older Firefox */
+   -webkit-appearance: none; /* Safari, Chrome, Edge and IE Mobile */
    appearance: none; /* rest */
 }
+
+input::placeholder,
+  textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #374251;
+    opacity: 1; /* Firefox */
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #374251;
+  }
+
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #374251;
+  }
+
+  /* Removes chrome defaults from autocomplete */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #374251;
+  }
+
+  *:focus {
+    outline: 0;
+  }
+  
+  button:focus,
+  input:focus,
+  a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 600px;
+  }
 
 @media (max-width: 1400px) {
     .container {
         width: 70%
     }
 }
-
-/* @media (max-width: 1165px) {
-    .container {
-      width: 60%;
-    }
-} */
-
 
 @media (max-width: 768px) {
     .container {

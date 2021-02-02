@@ -7,9 +7,10 @@ import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
 // Images
-import SEOImg from "../media/seo.png";
-import EmailMarketingImg from "../media/email-marketing.png";
-import AnalyticsImg from "../media/analytics.png";
+import WebDevelopmentHero from "../media/web-development-hero.png";
+import BespokeWebsitesImg from "../media/bespoke-websites.png";
+import WebDesignImg from "../media/web-design.png";
+import HostingImg from "../media/hosting.png";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
@@ -26,6 +27,7 @@ const WebDevelopment = () => {
       <ServiceItemHero
         title="Web Development"
         text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."
+        background={`url(${WebDevelopmentHero})`}
       />
       <ServiceDetail>
         <div className="container">
@@ -37,7 +39,7 @@ const WebDevelopment = () => {
             bulletOne="Use modern technologies to create fast and powerful websites."
             bulletTwo="Work with you to ensure content improves SEO and boosts interactivity."
             bulletThree="Deliver a completely unique website to stay ahead of the competition."
-            background={`url(${SEOImg})`}
+            background={`url(${BespokeWebsitesImg})`}
           />
 
           <ServiceItemAlt
@@ -46,7 +48,7 @@ const WebDevelopment = () => {
             bulletOne="Provide detailed wireframes of your site before production begins."
             bulletTwo="Optimise your emails for the highest open rate and click through rate."
             bulletThree="Automate the process of nurturing your leads."
-            background={`url(${EmailMarketingImg})`}
+            background={`url(${WebDesignImg})`}
           />
 
           <ServiceItem
@@ -57,7 +59,7 @@ const WebDevelopment = () => {
             bulletTwo="Write effective ad copy to increase quality score and reduce cost
           per acquisition."
             bulletThree="Build PPC landing pages optimised for conversion."
-            background={`url(${AnalyticsImg})`}
+            background={`url(${HostingImg})`}
           />
         </div>
       </ServiceDetail>

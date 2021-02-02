@@ -19,7 +19,7 @@ const ServicesSection = () => {
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   return (
-    <Services>
+    <Services id="services">
       <div className="container">
         <div className="row">
           <motion.div

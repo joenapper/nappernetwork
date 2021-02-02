@@ -1,7 +1,5 @@
 // Styled
 import styled from "styled-components";
-// Images
-import DigitalMarketing from "../../media/digital-marketing.png";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +11,7 @@ import { fade } from "../LogoAnimations";
 
 const ServiceItemHero = (props) => {
   return (
-    <HeroContainer>
+    <HeroContainer style={{ background: props.background }}>
       <div className="container">
         <motion.div
           variants={fade}
@@ -44,8 +42,9 @@ const HeroContainer = styled.section`
   position: relative;
   /* padding: calc(8vh + 4rem) 0rem 4rem 0rem; */
   padding-top: 8vh;
-  background: url(${DigitalMarketing}) center no-repeat;
-  background-size: cover;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 
   &::after {
     content: "";
@@ -112,7 +111,6 @@ const HeroContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .service-text-container h2 {

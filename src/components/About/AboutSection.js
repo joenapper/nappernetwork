@@ -2,11 +2,22 @@
 import styled from "styled-components";
 // Router
 import { Link } from "react-router-dom";
+// Animation
+import { motion } from "framer-motion";
+import { fade } from "../LogoAnimations";
+import { useScroll } from "../useScroll";
 
 const AboutSection = () => {
+  const [element, controls] = useScroll();
   return (
     <About>
-      <div className="container">
+      <motion.div
+        className="container"
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+      >
         <p>
           Driven by a passionate and creative team, Napper Network is a fully
           managed digital design and development agency based in Sheffield. We
@@ -16,7 +27,7 @@ const AboutSection = () => {
           If you want clear results, check out our services, and{" "}
           <Link to="/contact">get in touch.</Link>
         </p>
-      </div>
+      </motion.div>
     </About>
   );
 };

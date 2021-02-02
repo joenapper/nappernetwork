@@ -7,9 +7,10 @@ import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
 // Images
-import SEOImg from "../media/seo.png";
-import EmailMarketingImg from "../media/email-marketing.png";
-import AnalyticsImg from "../media/analytics.png";
+import SocialMediaHero from "../media/social-media-hero.png";
+import SocialMediaManagementImg from "../media/social-media-management.png";
+import ContentCreationImg from "../media/content-creation.png";
+import AdvertisingImg from "../media/advertising.png";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
@@ -26,38 +27,36 @@ const SocialMedia = () => {
       <ServiceItemHero
         title="Social Media"
         text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."
+        background={`url(${SocialMediaHero})`}
       />
       <ServiceDetail>
         <div className="container">
-          <ServiceTitle title="Digital Marketing Services" />
+          <ServiceTitle title="Social Media Services" />
           <ServiceItem
-            title="SEO"
-            text="We provide effective search engine optimisation strategies to improve
-        the visablility of your website."
-            bulletOne="Provide a detailed SEO audit of your Website."
-            bulletTwo="Implement key words to gain more site visits."
-            bulletThree="Help you understand how SEO works."
-            background={`url(${SEOImg})`}
+            title="Social Media Management"
+            text="We can create and manage a variety of social profiles to improve your online presence."
+            bulletOne="Develop social media strategies aligned with business goals."
+            bulletTwo="Engage with audience to build relationships and increase reach."
+            bulletThree="Create and optimise content schedule to increase visibility."
+            background={`url(${SocialMediaManagementImg})`}
           />
 
           <ServiceItemAlt
-            title="Email Marketing"
-            text="We provide effective marketing strategies to convert prospects into customers and one-time buyers into loyal, returning customers."
-            bulletOne="Build an email list full of targeted customers."
-            bulletTwo="Optimise your emails for the highest open rate and click through rate."
-            bulletThree="Automate the process of nurturing your leads."
-            background={`url(${EmailMarketingImg})`}
+            title="Content Creation"
+            text="We create valuable, relevant and consistent content to drive profitable customer action."
+            bulletOne="Create entertaining and educational content to engage target audience."
+            bulletTwo="Write compelling copy to generate traffic."
+            bulletThree="Optimise content to for specific platforms."
+            background={`url(${ContentCreationImg})`}
           />
 
           <ServiceItem
-            title="Pay-Per-Click Advertising"
-            text="We create successful 'PPC' campaigns to drive traffic to your website,
-          increase conversions and boost brand recognition."
-            bulletOne="Analyse competitors and identify targeteted keywords."
-            bulletTwo="Write effective ad copy to increase quality score and reduce cost
-          per acquisition."
-            bulletThree="Build PPC landing pages optimised for conversion."
-            background={`url(${AnalyticsImg})`}
+            title="Advertising"
+            text="We develop paid social strategies to amplify your reach, boost brand awareness and drive greater results."
+            bulletOne="Deliver effective campaigns across multiple platforms."
+            bulletTwo="Generate quality leads by creating targeted ads."
+            bulletThree="Monitor campaigns to improve performance and increase ROI."
+            background={`url(${AdvertisingImg})`}
           />
         </div>
       </ServiceDetail>

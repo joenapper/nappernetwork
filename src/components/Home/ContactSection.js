@@ -116,17 +116,10 @@ const Contact = styled.section`
     flex-basis: 45%;
   }
 
-  input {
-    background: none;
-    border: none;
-    outline: none;
-  }
-
   input::placeholder,
   textarea::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
-    opacity: 1; /* Firefox */
   }
 
   input:-ms-input-placeholder,
@@ -146,14 +139,7 @@ const Contact = styled.section`
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px #374251 inset !important;
-    -webkit-box-shadow: 0 0 0 30px #374251 inset !important;
-  }
-
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-    max-height: 600px;
+    -webkit-text-fill-color: #fff;
   }
 
   .button-container {
