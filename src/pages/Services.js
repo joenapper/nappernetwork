@@ -2,6 +2,7 @@
 // import ServiceItemHero from "../components/Services/ServiceItemHero";
 import HeroSection from "../components/Services/HeroSection";
 import ServicesSection from "../components/Home/ServicesSection";
+import ProcessSection from "../components/Services/ProcessSection";
 import ContactSection from "../components/Home/ContactSection";
 // Helmet
 import { Helmet } from "react-helmet-async";
@@ -22,6 +23,7 @@ const Services = () => {
         text="At Napper Network we offer a wide range of services to suit your business needs."
       /> */}
       <ServicesSection />
+      <ProcessSection />
       <ContactSection />
     </main>
   );

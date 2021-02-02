@@ -4,6 +4,15 @@ import styled from "styled-components";
 import logo from "../media/logo-alt.png";
 // Router
 import { Link } from "react-router-dom";
+// Font-Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faPinterest,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const FooterSection = () => {
   return (
@@ -24,7 +33,14 @@ const FooterSection = () => {
         <div className="btm-footer">
           <img className="logo" src={logo} alt="Napper Network" />
           <p>All Rights Reserved &copy; 2020 NapperNetwork</p>
-          <p>Socials</p>
+          {/* <p>Socials</p> */}
+          <div className="socials">
+            <FontAwesomeIcon className="icon" icon={faFacebook} />
+            <FontAwesomeIcon className="icon" icon={faTwitter} />
+            <FontAwesomeIcon className="icon" icon={faInstagram} />
+            <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+            <FontAwesomeIcon className="icon" icon={faPinterest} />
+          </div>
         </div>
       </div>
     </Footer>
@@ -56,6 +72,17 @@ const Footer = styled.footer`
 
   .btm-footer {
     text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    margin: 1rem 1rem 0rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
   }
 
   .logo {

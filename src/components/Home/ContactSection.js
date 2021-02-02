@@ -24,6 +24,8 @@ const ContactSection = () => {
           console.log(error.text);
         }
       );
+    const submit = document.getElementById("submit");
+    submit.value = "Sent";
     e.target.reset();
   }
   return (
@@ -45,44 +47,50 @@ const ContactSection = () => {
           onSubmit={sendEmail}
         >
           <div className="row">
-            <input
-              type="text"
-              id="name"
-              placeholder="Your Name *"
-              name="name"
+            <div className="inputs">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your Name *"
+                name="name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email *"
+                name="email"
+                required
+              />
+
+              <input
+                type="text"
+                id="company"
+                placeholder="Your Company (If Applicable)"
+                name="company"
+              />
+              <input
+                type="number"
+                id="telephone"
+                placeholder="Your Telephone Number"
+                name="telephone"
+              />
+            </div>
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="What would you like to talk about?"
               required
-            />
-            <input
-              type="email"
-              id="email"
-              placeholder="Your Email *"
-              name="email"
-              required
-            />
+            ></textarea>
           </div>
-          <div className="row">
-            <input
-              type="text"
-              id="company"
-              placeholder="Your Company (If Applicable)"
-              name="company"
-            />
-            <input
-              type="number"
-              id="telephone"
-              placeholder="Your Telephone Number"
-              name="telephone"
-            />
-          </div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="What would you like to talk about?"
-            required
-          ></textarea>
           <div className="button-container">
-            <input className="button" type="submit" value="Send Message" />
+            <input
+              id="submit"
+              className="button"
+              type="submit"
+              value="Send Message"
+            />
           </div>
         </motion.form>
       </div>
@@ -102,18 +110,27 @@ const Contact = styled.section`
     flex-direction: column;
   }
 
-  .row input,
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 1rem;
+  }
+
+  .inputs input,
   textarea {
-    padding: 1rem 0rem;
+    /* padding: 1rem 0rem; */
+    padding: 1rem;
     margin-bottom: 1rem;
     background: none;
     border: none;
     outline: none;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    border: 1px solid #f4f4f4;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 1rem;
-    flex-basis: 45%;
+    flex-grow: 1;
   }
 
   input::placeholder,
@@ -169,6 +186,10 @@ const Contact = styled.section`
 
     .row {
       flex-direction: column;
+    }
+
+    .inputs {
+      margin: 0;
     }
   }
 `;

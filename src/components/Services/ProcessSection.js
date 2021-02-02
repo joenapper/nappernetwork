@@ -28,7 +28,7 @@ const ProcessSection = () => {
         >
           The <span>Process</span>
         </motion.h2>
-        <motion.div
+        {/* <motion.div
           ref={element2}
           variants={fade}
           animate={controls2}
@@ -81,7 +81,7 @@ const ProcessSection = () => {
             you and continue to monitor our services and strategies to keep up
             with the dynamic platforms.
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </Process>
   );

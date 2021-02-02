@@ -63,7 +63,7 @@ const HeroContainer = styled(motion.main)`
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: "Kollektif";
+    font-family: "Kollektif", sans-serif;
   }
 
   h2 {
@@ -74,7 +74,7 @@ const HeroContainer = styled(motion.main)`
   .Typewriter {
     font-size: 5rem;
     color: #8bd0f2;
-    font-family: "Kollektif";
+    font-family: "Kollektif", sans-serif;
   }
 
   @media (max-width: 1000px) {

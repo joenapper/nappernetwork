@@ -26,7 +26,7 @@ const SocialMedia = () => {
       </Helmet>
       <ServiceItemHero
         title="Social Media"
-        text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."
+        text="We provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
         background={`url(${SocialMediaHero})`}
       />
       <ServiceDetail>

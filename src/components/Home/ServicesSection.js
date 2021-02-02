@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // Images
-import test1 from "../../media/sample1.png";
-import test2 from "../../media/sample2.png";
-import test3 from "../../media/sample3.png";
+import WebDevelopmentImg from "../../media/sample2.png";
+import DigitalMarketingImg from "../../media/sample3.png";
+import SocialMediaImg from "../../media/sample1.png";
 // Animations
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
@@ -33,7 +33,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={test1}
+                  src={WebDevelopmentImg}
                   alt="Napper Network Web Development"
                 />
               </div>
@@ -44,10 +44,10 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              <p>
+              {/* <p>
                 We deliver bespoke web design and development that simply cannot
                 be replicated by "out-the-box" alternatives.
-              </p>
+              </p> */}
               {/* <li>
                 <h4>Web Development</h4>
               </li>
@@ -80,7 +80,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={test2}
+                  src={DigitalMarketingImg}
                   alt="Napper Network Digital Marketing"
                 />
               </div>
@@ -91,10 +91,10 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              <p>
+              {/* <p>
                 We deliver bespoke web design and development that simply cannot
                 be replicated by "out-the-box" alternatives.
-              </p>
+              </p> */}
             </Link>
           </motion.div>
 
@@ -109,7 +109,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={test3}
+                  src={SocialMediaImg}
                   alt="Napper Network Social Media"
                 />
               </div>
@@ -120,10 +120,10 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              <p>
+              {/* <p>
                 We deliver bespoke web design and development that simply cannot
                 be replicated by "out-the-box" alternatives.
-              </p>
+              </p> */}
             </Link>
           </motion.div>
         </div>
@@ -216,6 +216,8 @@ const Services = styled.section`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    /*  */
+    justify-content: center;
   }
 
   .chevron-right {

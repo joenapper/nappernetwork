@@ -66,7 +66,7 @@ const HeroContainer = styled(motion.main)`
   .services-hero {
     height: 100%;
     width: 60%;
-    margin: auto 20%;
+    margin: auto;
     position: relative;
     z-index: 2;
     display: flex;
@@ -93,17 +93,34 @@ const HeroContainer = styled(motion.main)`
     justify-content: flex-end;
   }
 
-  /* .chevron-down {
-    font-size: 1rem;
-    cursor: pointer;
-  } */
-
   @media (max-width: 1000px) {
     height: 70vh;
+
+    .services-hero {
+      width: 80%;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
   }
 
   @media (max-width: 768px) {
     height: 60vh;
+
+    /* .services-hero {
+      width: 80%;
+    } */
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 
