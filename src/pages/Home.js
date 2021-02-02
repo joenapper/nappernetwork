@@ -19,7 +19,10 @@ const Home = () => {
       </Helmet>
       <HeroSection />
       <ServicesSection />
-      <BannerSection />
+      <BannerSection
+        text="Driven by results, we create successful marketing solutions for
+          businesses."
+      />
       <AboutSection />
       <ContactSection />
     </main>

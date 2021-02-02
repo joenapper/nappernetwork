@@ -12,19 +12,18 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // Router
 import { Link } from "react-router-dom";
 
-const AboutSection = () => {
+const AboutSection = (props) => {
   const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
   return (
     <About>
-      <div className="container">
-        <motion.div
-          ref={element}
-          variants={fade}
-          animate={controls}
-          initial="hidden"
-          className="about-text"
-        >
+      <motion.div
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        className="container"
+      >
+        <div className="about-text">
           <h2>
             <span className="secondary">Why</span> Us?
           </h2>
@@ -45,18 +44,11 @@ const AboutSection = () => {
               />
             </Link>
           </div>
-        </motion.div>
-        <div className="img-container">
-          <motion.img
-            ref={element2}
-            variants={fade}
-            animate={controls2}
-            initial="hidden"
-            src={WhyUsImg}
-            alt=""
-          />
         </div>
-      </div>
+        <div className="img-container">
+          <img src={WhyUsImg} alt="" />
+        </div>
+      </motion.div>
     </About>
   );
 };
@@ -123,7 +115,7 @@ const About = styled.section`
   p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .button-container {

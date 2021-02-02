@@ -9,21 +9,38 @@ import emailjs from "emailjs-com";
 
 const MainContactSection = () => {
   const [element, controls] = useScroll();
+  const submit = document.getElementById("submit");
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm("gmail", "rosie", e.target, process.env.REACT_APP_SECRET_KEY)
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    if (submit.value === "Sent") {
+      console.log("Refresh page to submit again");
+    } else {
+      submit.disabled = true;
+      submit.classList.remove("button");
+      submit.classList.add("is-loading");
+
+      emailjs
+        .sendForm("gmail", "rosie", e.target, process.env.REACT_APP_SECRET_KEY)
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    setTimeout(() => {
+      submit.classList.remove("is-loading");
+      submit.classList.add("button");
+      submit.value = "Sent";
+      submit.style =
+        "background-color: #374251 !important; color: #fff !important";
+      submit.style.cursor = "default";
+      e.target.reset();
+    }, 1200);
   }
   return (
     <MainContact id="service">
@@ -74,6 +91,7 @@ const MainContactSection = () => {
         ></textarea>
         <div className="button-container">
           <input
+            id="submit"
             className="button button-alt"
             type="submit"
             value="Send Message"
@@ -117,6 +135,31 @@ const MainContact = styled.section`
     justify-content: flex-end;
   }
 
+  input[type="submit"] {
+    transition: all 0.25s ease, color 1ms;
+  }
+
+  input[type="submit"].is-loading {
+    border-radius: 50%;
+    background: transparent;
+    color: transparent;
+    border: 3px solid #374251;
+    border-left-color: #fff;
+    animation: rotating 2s 0.25s linear infinite;
+    animation-delay: 0s;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   @media (max-width: 1300px) {
     .info,
     textarea {
@@ -132,6 +175,13 @@ const MainContact = styled.section`
 
     .button-container {
       width: 70%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    input[type="submit"].is-loading {
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 

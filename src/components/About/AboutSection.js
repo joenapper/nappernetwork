@@ -6,8 +6,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
 import { useScroll } from "../useScroll";
+// Images
+// import AboutImg from "../../media/about.png";
+// Font-Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const AboutSection = () => {
+const AboutSection = (props) => {
   const [element, controls] = useScroll();
   return (
     <About>
@@ -18,15 +23,36 @@ const AboutSection = () => {
         animate={controls}
         initial="hidden"
       >
-        <p>
-          Driven by a passionate and creative team, Napper Network is a fully
-          managed digital design and development agency based in Sheffield. We
-          take our time to understand your business so we can design and deliver
-          a tailored, quality approach for your company, big or small.
-          <br />
-          If you want clear results, check out our services, and{" "}
-          <Link to="/contact">get in touch.</Link>
-        </p>
+        <div className="about-text">
+          <h2>
+            {props.titleMain}{" "}
+            <span className="secondary">{props.titleSec}</span>
+          </h2>
+          <p>
+            {/* Driven by a passionate and creative team, Napper Network is a fully
+            managed digital design and development agency based in Sheffield. We
+            take our time to understand your business so we can design and
+            deliver a tailored, quality approach for your company, big or small.
+            <br />
+            If you want clear results, check out our services, and{" "}
+            <Link class="link" to="/contact">
+              get in touch.
+            </Link> */}
+            {props.text}
+          </p>
+          <div className="button-container">
+            <Link to="/contact" className="button button-alt">
+              Enquire now{" "}
+              <FontAwesomeIcon
+                className="chevron-right"
+                icon={faChevronRight}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="img-container">
+          <img src={props.image} alt="" />
+        </div>
       </motion.div>
     </About>
   );
@@ -83,17 +109,71 @@ const About = styled.section`
   min-height: 20vh;
   font-size: 1.2rem;
 
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 60%;
+  }
+
   p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
-  a {
+  /* .link {
     color: #8bd0f2;
     text-decoration: underline;
+  } */
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
-  @media (max-width: 550px) {
-    font-size: 1rem;
+  .img-container {
+    width: 35%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  img {
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media (max-width: 1170px) {
+    .about-text {
+      width: 55%;
+    }
+
+    .img-container {
+      width: 40%;
+      margin-left: 5%;
+    }
+    /* .container {
+      flex-direction: column;
+    } */
+
+    /* .about-text,
+    img {
+      width: 100%;
+    } */
+  }
+
+  @media (max-width: 1025px) {
+    .about-text {
+      width: 100%;
+    }
+
+    .img-container {
+      display: none;
+    }
   }
 `;
 

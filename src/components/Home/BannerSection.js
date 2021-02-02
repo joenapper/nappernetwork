@@ -1,14 +1,11 @@
 // Styled
 import styled from "styled-components";
 
-const BannerSection = () => {
+const BannerSection = (props) => {
   return (
     <Banner>
       <div className="container">
-        <h2 className="extended-title">
-          Driven by results, we create successful marketing solutions for
-          businesses.
-        </h2>
+        <h2 className="extended-title">{props.text}</h2>
       </div>
     </Banner>
   );
