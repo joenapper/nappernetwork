@@ -153,7 +153,8 @@ a:focus {
     outline: none !important;
 }
 
-/* Removes default rounded input styles on iOS 5+ */
+/* Removes default rounded styles on iOS 5+ */
+textarea,
 input {
     border-radius: 0;
     -webkit-appearance: none;

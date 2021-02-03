@@ -73,16 +73,21 @@ const NavList = styled.ul`
     text-align: center;
     background-color: #374251;
     border-left: 1px solid #7f8e94;
+    opacity: 0.9;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 70vw;
+    height: 60vh;
+    width: 100vw;
     transition: transform 0.5s ease-in-out;
 
     li {
       margin: 0;
+    }
+
+    li:nth-child(1) {
+      display: none;
     }
   }
 `;

@@ -22,17 +22,17 @@ const FooterSection = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/careers">Careers</Link>
+          {/* <Link to="/blog">Blog</Link> */}
+          {/* <Link to="/careers">Careers</Link> */}
           <Link to="/contact">Contact</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
+          {/* <Link to="/privacy-policy">Privacy Policy</Link> */}
         </div>
 
         <div className="footer-hr"></div>
 
         <div className="btm-footer">
           <img className="logo" src={logo} alt="Napper Network" />
-          <p>All Rights Reserved &copy; 2020 NapperNetwork</p>
+          <p>All Rights Reserved &copy; 2021 NapperNetwork</p>
           {/* <p>Socials</p> */}
           <div className="socials">
             <FontAwesomeIcon className="icon" icon={faFacebook} />
@@ -55,7 +55,7 @@ const Footer = styled.footer`
   .top-footer {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .top-footer a:hover {
@@ -101,7 +101,7 @@ const Footer = styled.footer`
     }
 
     .top-footer a {
-      margin: 0 1rem;
+      /* margin: 0 1rem; */
     }
   }
 `;

@@ -58,6 +58,7 @@ const Nav = styled.nav`
 
   a p {
     display: none;
+    z-index: 1;
   }
 
   .logo {
