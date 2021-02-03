@@ -128,6 +128,12 @@ const MainContact = styled.section`
     flex-basis: 45%;
   }
 
+  /* textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 1600px;
+  } */
+
   .button-container {
     width: 50%;
     margin: auto;

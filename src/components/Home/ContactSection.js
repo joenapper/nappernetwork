@@ -213,17 +213,7 @@ const Contact = styled.section`
     }
   }
 
-  @media (max-width: 1165px) {
-    .container {
-      width: 80%;
-    }
-  }
-
   @media (max-width: 768px) {
-    .container {
-      width: 70%;
-    }
-
     .row {
       flex-direction: column;
     }
