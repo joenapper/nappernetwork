@@ -202,6 +202,13 @@ const MainContact = styled.section`
     }
   }
 
+  @media (max-width: 450px) {
+    .info,
+    textarea {
+      font-size: 0.75rem;
+    }
+  }
+
   @media (max-width: 375px) {
     .info,
     textarea {

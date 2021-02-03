@@ -227,6 +227,13 @@ const Contact = styled.section`
       height: 2.5rem;
     }
   }
+
+  @media (max-width: 450px) {
+    .inputs input,
+    textarea {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export default ContactSection;
