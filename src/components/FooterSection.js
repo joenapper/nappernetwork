@@ -1,7 +1,7 @@
 // Styled
 import styled from "styled-components";
 // Images
-import logo from "../media/logo-alt.png";
+import logo from "../media/footer-logo.png";
 // Router
 import { Link } from "react-router-dom";
 // Font-Awesome

@@ -55,6 +55,12 @@ const Banner = styled.section`
       display: block;
     }
   } */
+
+  @media (max-width: 550px) {
+    .extended-title {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export default BannerSection;

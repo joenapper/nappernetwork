@@ -140,6 +140,7 @@ const About = styled.section`
     margin-left: 5%;
     display: flex;
     justify-content: flex-end;
+    height: -webkit-fill-available;
   }
 
   img {

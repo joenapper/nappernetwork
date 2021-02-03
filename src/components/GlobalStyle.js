@@ -153,6 +153,12 @@ a:focus {
     outline: none !important;
 }
 
+/* Removes default rounded input styles on iOS 5+ */
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
 /* Removes number default arrows */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

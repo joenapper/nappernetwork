@@ -26,7 +26,7 @@ const Services = () => {
         text="At Napper Network we offer a wide range of services to suit your business needs."
       /> */}
       <ServicesSection />
-      <BannerSection text="Reach - Enhance - Convert" />
+      <BannerSection text="Reach > Engage > Convert" />
       <AboutSection
         titleMain="Bespoke"
         titleSec="Solutions"

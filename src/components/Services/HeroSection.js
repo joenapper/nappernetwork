@@ -60,7 +60,7 @@ const HeroContainer = styled(motion.main)`
       rgb(55, 66, 81),
       rgb(30, 37, 45)
     );
-    opacity: 0.75;
+    opacity: 0.9;
   }
 
   .services-hero {

@@ -4,9 +4,9 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // Images
-import WebDevelopmentImg from "../../media/sample2.png";
-import DigitalMarketingImg from "../../media/sample3.png";
-import SocialMediaImg from "../../media/sample1.png";
+import WebDevelopmentIcon from "../../media/WebDevelopmentIcon.png";
+import DigitalMarketingIcon from "../../media/DigitalMarketingIcon.png";
+import SocialMediaIcon from "../../media/SocialMediaIcon.png";
 // Animations
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
@@ -33,7 +33,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={WebDevelopmentImg}
+                  src={WebDevelopmentIcon}
                   alt="Napper Network Web Development"
                 />
               </div>
@@ -48,24 +48,6 @@ const ServicesSection = () => {
                 We deliver bespoke web design and development that simply cannot
                 be replicated by "out-the-box" alternatives.
               </p> */}
-              {/* <li>
-                <h4>Web Development</h4>
-              </li>
-              <li>
-                <p>Modern Web Design</p>
-              </li>
-              <li>
-                <p>Mobile Optimisation</p>
-              </li>
-              <li>
-                <p>Detailed SEO Audits</p>
-              </li>
-              <li>
-                <p>Hosting / Maintenance</p>
-              </li>
-              <li>
-                <p>Ongoing Support</p>
-              </li> */}
             </Link>
           </motion.div>
 
@@ -80,7 +62,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={DigitalMarketingImg}
+                  src={DigitalMarketingIcon}
                   alt="Napper Network Digital Marketing"
                 />
               </div>
@@ -109,7 +91,7 @@ const ServicesSection = () => {
               <div className="service-icon-container">
                 <img
                   className="service-icon"
-                  src={SocialMediaImg}
+                  src={SocialMediaIcon}
                   alt="Napper Network Social Media"
                 />
               </div>

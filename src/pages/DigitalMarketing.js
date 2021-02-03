@@ -7,10 +7,10 @@ import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
 // Images
-import DigitalMarketingHero from "../media/digital-marketing.png";
+import DigitalMarketingHero from "../media/digital-marketing-hero.png";
 import SEOImg from "../media/seo.png";
 import EmailMarketingImg from "../media/email-marketing.png";
-import AnalyticsImg from "../media/analytics.png";
+import PPCImg from "../media/ppc.png";
 // Helmet
 import { Helmet } from "react-helmet-async";
 
@@ -59,7 +59,7 @@ const DigitalMarketing = () => {
             bulletTwo="Write effective ad copy to increase quality score and reduce cost
           per acquisition."
             bulletThree="Build PPC landing pages optimised for conversion."
-            background={`url(${AnalyticsImg})`}
+            background={`url(${PPCImg})`}
           />
         </div>
       </ServiceDetail>

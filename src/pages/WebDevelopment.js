@@ -21,12 +21,12 @@ const WebDevelopment = () => {
         <title>Napper Network - Web Development</title>
         <meta
           name="description"
-          content="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
+          content="At Napper Network, we focus on user experience. Creating bespoke websites to improve your online presence and set you apart from competitors."
         />
       </Helmet>
       <ServiceItemHero
         title="Web Development"
-        text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."
+        text="Focusing on user experience, we create bespoke websites to improve your online presence and set you apart from competitors."
         background={`url(${WebDevelopmentHero})`}
       />
       <ServiceDetail>
@@ -34,31 +34,28 @@ const WebDevelopment = () => {
           <ServiceTitle title="Web Development Services" />
           <ServiceItem
             title="Bespoke Websites"
-            text="We provide effective search engine optimisation strategies to improve
-        the visablility of your website."
+            text="We create completely  unique, modern websites that will rank highly in organic search results and help grow your business."
             bulletOne="Use modern technologies to create fast and powerful websites."
             bulletTwo="Work with you to ensure content improves SEO and boosts interactivity."
-            bulletThree="Deliver a completely unique website to stay ahead of the competition."
+            bulletThree="Deliver a unique website to stay ahead of the competition."
             background={`url(${BespokeWebsitesImg})`}
           />
 
           <ServiceItemAlt
             title="Modern Web Design"
-            text="We provide effective marketing strategies to convert prospects into customers and one-time buyers into loyal, returning customers."
-            bulletOne="Provide detailed wireframes of your site before production begins."
-            bulletTwo="Optimise your emails for the highest open rate and click through rate."
-            bulletThree="Automate the process of nurturing your leads."
+            text="We specialise in modern web design to improve user experience and increase conversions."
+            bulletOne="Create a web design to keep leads on your page."
+            bulletTwo="Modernise your existing site to correspond to new design trends."
+            bulletThree="Improve how new and existing customers perceive your brand."
             background={`url(${WebDesignImg})`}
           />
 
           <ServiceItem
             title="Hosting &#38; Maintenance"
-            text="We create successful 'PPC' campaigns to drive traffic to your website,
-          increase conversions and boost brand recognition."
-            bulletOne="Analyse competitors and identify targeteted keywords."
-            bulletTwo="Write effective ad copy to increase quality score and reduce cost
-          per acquisition."
-            bulletThree="Build PPC landing pages optimised for conversion."
+            text="Our hosting services optimise the performance of your website and reduce loading time."
+            bulletOne="Provide custom domain names and SSL certificates."
+            bulletTwo="Guarantee live updates with automatic scaling."
+            bulletThree="Provide reliable hosting with ongoing support."
             background={`url(${HostingImg})`}
           />
         </div>

@@ -114,7 +114,7 @@ const HeroContainer = styled.section`
   }
 
   .service-text-container h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
   }
 
@@ -209,7 +209,7 @@ const HeroContainer = styled.section`
     }
 
     .service-text-container h2 {
-      width: 70%;
+      width: 90%;
       margin-right: 30%;
       font-size: 2.25rem;
     }
