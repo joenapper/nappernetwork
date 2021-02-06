@@ -2,7 +2,7 @@
 // import ServiceItemHero from "../components/Services/ServiceItemHero";
 import HeroSection from "../components/Services/HeroSection";
 import ServicesSection from "../components/Home/ServicesSection";
-import BannerSection from "../components/Home/BannerSection";
+import BannerSection from "../components/Services/BannerSection";
 import AboutSection from "../components/About/AboutSection";
 import ContactSection from "../components/Home/ContactSection";
 // Helmet
@@ -26,7 +26,7 @@ const Services = () => {
         text="At Napper Network we offer a wide range of services to suit your business needs."
       /> */}
       <ServicesSection />
-      <BannerSection text="Reach > Engage > Convert" />
+      <BannerSection />
       <AboutSection
         titleMain="Bespoke"
         titleSec="Solutions"

@@ -151,6 +151,11 @@ const ItemAlt = styled.div`
   .we-can li {
     display: flex;
     align-items: center;
+    padding: 0.5rem 0rem;
+  }
+
+  .we-can li p {
+    line-height: 1;
   }
 
   .bullet-point {

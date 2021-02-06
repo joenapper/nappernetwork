@@ -55,7 +55,7 @@ const DigitalMarketing = () => {
             title="Pay-Per-Click Advertising"
             text="We create successful 'PPC' campaigns to drive traffic to your website,
           increase conversions and boost brand recognition."
-            bulletOne="Analyse competitors and identify targeteted keywords."
+            bulletOne="Analyse competitors and identify targeted keywords."
             bulletTwo="Write effective ad copy to increase quality score and reduce cost
           per acquisition."
             bulletThree="Build PPC landing pages optimised for conversion."

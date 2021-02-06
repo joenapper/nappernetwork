@@ -2,18 +2,6 @@
 import styled from "styled-components";
 
 const BannerSection = (props) => {
-  // setTimeout(() => {
-  //   const title = document.querySelector(".extended-title");
-  //   const titleStringValue = title.innerHTML;
-  //   if (
-  //     titleStringValue === "Reach - Enhance - Convert"
-  //     // title.style.display === "block"
-  //   ) {
-  //     console.log("yes");
-  //     title.innerHTML = "Reach </br> Enhance </br> Convert";
-  //   }
-  // }, 100);
-
   return (
     <Banner>
       <div className="container">

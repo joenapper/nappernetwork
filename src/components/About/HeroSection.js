@@ -75,6 +75,7 @@ const HeroContainer = styled(motion.main)`
     font-size: 5rem;
     color: #8bd0f2;
     font-family: "Kollektif", sans-serif;
+    font-weight: bolder;
   }
 
   @media (max-width: 1000px) {
