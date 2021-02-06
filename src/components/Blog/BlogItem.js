@@ -7,7 +7,6 @@ import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 const BlogItem = (props) => {
   return (
     <Blog>
-      {/* <img src="" alt="" srcset="" /> */}
       <div className="test"></div>
       <div className="blog-text">
         <h3>{props.title}</h3>

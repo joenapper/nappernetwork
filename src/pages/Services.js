@@ -1,5 +1,4 @@
 // Components
-// import ServiceItemHero from "../components/Services/ServiceItemHero";
 import HeroSection from "../components/Services/HeroSection";
 import ServicesSection from "../components/Home/ServicesSection";
 import BannerSection from "../components/Services/BannerSection";
@@ -21,10 +20,6 @@ const Services = () => {
         />
       </Helmet>
       <HeroSection />
-      {/* <ServiceItemHero
-        title="Services"
-        text="At Napper Network we offer a wide range of services to suit your business needs."
-      /> */}
       <ServicesSection />
       <BannerSection />
       <AboutSection

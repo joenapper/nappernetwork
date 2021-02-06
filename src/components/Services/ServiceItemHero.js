@@ -40,7 +40,6 @@ const HeroContainer = styled.section`
   height: 80vh;
   width: 100%;
   position: relative;
-  /* padding: calc(8vh + 4rem) 0rem 4rem 0rem; */
   padding-top: 8vh;
   background-size: cover !important;
   background-position: center !important;
@@ -196,7 +195,6 @@ const HeroContainer = styled.section`
 
   @media (max-width: 542px) {
     height: 60vh;
-    /* padding-top: 0; */
 
     &::after {
       width: 100%;

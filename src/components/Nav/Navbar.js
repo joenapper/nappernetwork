@@ -52,8 +52,6 @@ const Nav = styled.nav`
 
   a {
     display: flex;
-    /* font-size: 1.1rem; */
-    /* letter-spacing: 2px; */
   }
 
   a p {
@@ -73,10 +71,6 @@ const Nav = styled.nav`
 
   @media (max-width: 1400px) {
     width: 70%;
-
-    /* a {
-      font-size: 1rem;
-    } */
   }
 
   @media (max-width: 1150px) {
@@ -84,10 +78,6 @@ const Nav = styled.nav`
       max-width: 150px;
     }
   }
-
-  /* @media (max-width: 1156px) {
-    width: 80%;
-  } */
 
   @media (max-width: 1000px) {
     width: 90%;
@@ -111,12 +101,6 @@ const Nav = styled.nav`
       font-size: 1rem;
     }
   }
-
-  /* @media (max-width: 550px) {
-    .logo {
-      max-width: 200px;
-    }
-  } */
 `;
 
 export default Navbar;

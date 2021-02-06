@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
 import { useScroll } from "../useScroll";
-// Images
-// import AboutImg from "../../media/about.png";
 // Font-Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -28,18 +26,7 @@ const AboutSection = (props) => {
             {props.titleMain}{" "}
             <span className="secondary">{props.titleSec}</span>
           </h2>
-          <p>
-            {/* Driven by a passionate and creative team, Napper Network is a fully
-            managed digital design and development agency based in Sheffield. We
-            take our time to understand your business so we can design and
-            deliver a tailored, quality approach for your company, big or small.
-            <br />
-            If you want clear results, check out our services, and{" "}
-            <Link class="link" to="/contact">
-              get in touch.
-            </Link> */}
-            {props.text}
-          </p>
+          <p>{props.text}</p>
           <div className="button-container">
             <Link to="/contact" className="button button-alt">
               Enquire now{" "}
@@ -123,11 +110,6 @@ const About = styled.section`
     font-size: 1.2rem;
     line-height: 1.5;
   }
-
-  /* .link {
-    color: #8bd0f2;
-    text-decoration: underline;
-  } */
 
   .button-container {
     width: 100%;

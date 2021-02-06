@@ -38,12 +38,6 @@ const Banner = styled.section`
     }
   }
 
-  /* @media (max-width: 650px) {
-    .extended-title {
-      display: block;
-    }
-  } */
-
   @media (max-width: 550px) {
     .extended-title {
       font-size: 1.5rem;

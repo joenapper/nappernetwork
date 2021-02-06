@@ -21,7 +21,7 @@ const SocialMedia = () => {
         <title>Napper Network - Social Media</title>
         <meta
           name="description"
-          content="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
+          content="At Napper Network, we provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
         />
       </Helmet>
       <ServiceItemHero

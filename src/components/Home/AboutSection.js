@@ -132,7 +132,6 @@ const About = styled.section`
   }
 
   img {
-    /* width: 60%; */
     z-index: 1;
   }
 
@@ -145,14 +144,6 @@ const About = styled.section`
       width: 40%;
       margin-left: 5%;
     }
-    /* .container {
-      flex-direction: column;
-    } */
-
-    /* .about-text,
-    img {
-      width: 100%;
-    } */
   }
 
   @media (max-width: 1025px) {

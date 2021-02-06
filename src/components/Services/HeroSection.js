@@ -42,11 +42,6 @@ const HeroContainer = styled(motion.main)`
   position: relative;
   background: url(${ServicesHero}) center no-repeat;
   background-size: cover;
-  /* background-image: radial-gradient(
-    circle at center center,
-    rgb(55, 66, 81),
-    rgb(30, 37, 45)
-  ); */
 
   &::after {
     content: "";
@@ -82,13 +77,9 @@ const HeroContainer = styled(motion.main)`
   p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    /* width: 80%; */
-    /* margin-right: 20%; */
   }
 
   .button-container {
-    /* width: 80%; */
-    /* margin-right: 20%; */
     display: flex;
     justify-content: flex-end;
   }
@@ -107,10 +98,6 @@ const HeroContainer = styled(motion.main)`
 
   @media (max-width: 768px) {
     height: 60vh;
-
-    /* .services-hero {
-      width: 80%;
-    } */
 
     h2 {
       font-size: 3rem;

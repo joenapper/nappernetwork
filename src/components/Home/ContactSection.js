@@ -134,13 +134,11 @@ const Contact = styled.section`
 
   .inputs input,
   textarea {
-    /* padding: 1rem 0rem; */
     padding: 1rem;
     margin-bottom: 1rem;
     background: none;
     border: none;
     outline: none;
-    /* border-bottom: 1px solid black; */
     border: 1px solid #f4f4f4;
     font-family: "Montserrat", sans-serif;
     color: #fff;

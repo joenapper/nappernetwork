@@ -44,10 +44,6 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              {/* <p>
-                We deliver bespoke web design and development that simply cannot
-                be replicated by "out-the-box" alternatives.
-              </p> */}
             </Link>
           </motion.div>
 
