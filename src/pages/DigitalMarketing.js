@@ -35,7 +35,7 @@ const DigitalMarketing = () => {
           <ServiceItem
             title="SEO"
             text="We provide effective search engine optimisation strategies to improve
-        the visablility of your website."
+        the visibility of your website."
             bulletOne="Provide a detailed SEO audit of your Website."
             bulletTwo="Implement key words to gain more site visits."
             bulletThree="Help you understand how SEO works."
