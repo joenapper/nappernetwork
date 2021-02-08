@@ -35,11 +35,41 @@ const FooterSection = () => {
           <p>All Rights Reserved &copy; 2021 NapperNetwork</p>
           {/* <p>Socials</p> */}
           <div className="socials">
-            <FontAwesomeIcon className="icon" icon={faFacebook} />
-            <FontAwesomeIcon className="icon" icon={faTwitter} />
-            <FontAwesomeIcon className="icon" icon={faInstagram} />
-            <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
-            <FontAwesomeIcon className="icon" icon={faPinterest} />
+            <a
+              href="https://www.facebook.com/NapperNetwork"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="icon" icon={faFacebook} />
+            </a>
+            <a
+              href="https://twitter.com/nappernetwork"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="icon" icon={faTwitter} />
+            </a>
+            <a
+              href="https://www.instagram.com/nappernetwork/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="icon" icon={faInstagram} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/nappernetwork"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+            </a>
+            <a
+              href="https://www.pinterest.co.uk/NapperNetwork"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="icon" icon={faPinterest} />
+            </a>
           </div>
         </div>
       </div>
