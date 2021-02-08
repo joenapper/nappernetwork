@@ -46,7 +46,7 @@ const SocialMedia = () => {
             text="We create valuable, relevant and consistent content to drive profitable customer action."
             bulletOne="Create entertaining and educational content to engage target audience."
             bulletTwo="Write compelling copy to generate traffic."
-            bulletThree="Optimise content to for specific platforms."
+            bulletThree="Optimise content for specific platforms."
             background={`url(${ContentCreationImg})`}
           />
 
