@@ -54,12 +54,22 @@ const HeroContainer = styled(motion.main)`
     max-width: 80%;
   }
 
+  @media (max-width: 1400px) {
+    .hero-image {
+      max-width: 70%;
+    }
+  }
+
   @media (max-width: 1000px) {
     height: 70vh;
   }
 
   @media (max-width: 768px) {
     height: 60vh;
+
+    .hero-image {
+      max-width: 80%;
+    }
   }
 `;
 
