@@ -126,7 +126,7 @@ const About = styled.section`
   }
 
   img {
-    width: 100%;
+    width: -webkit-fill-available;
     z-index: 1;
     object-fit: scale-down;
   }
