@@ -122,11 +122,11 @@ const About = styled.section`
     margin-left: 5%;
     display: flex;
     justify-content: flex-end;
-    height: -webkit-fill-available;
+    max-height: 355px;
   }
 
   img {
-    width: -webkit-fill-available;
+    width: 100%;
     z-index: 1;
     object-fit: scale-down;
   }
