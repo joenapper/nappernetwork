@@ -128,6 +128,7 @@ const About = styled.section`
   img {
     width: 100%;
     z-index: 1;
+    object-fit: scale-down;
   }
 
   @media (max-width: 1170px) {
