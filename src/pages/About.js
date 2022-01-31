@@ -9,7 +9,7 @@ import AboutImg from "../media/about.png";
 
 const About = () => {
   return (
-    <main>
+    <>
       <MetaData title="About" />
 
       <HeroSection />
@@ -24,10 +24,11 @@ const About = () => {
               get in touch.
             "
         image={AboutImg}
+        imageAlt="Online presence"
       />
       <ProcessSection />
       <ContactSection />
-    </main>
+    </>
   );
 };
 

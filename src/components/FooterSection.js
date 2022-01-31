@@ -35,6 +35,7 @@ const FooterSection = () => {
               href="https://www.facebook.com/NapperNetwork"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to Napper Network Facebook page"
             >
               <FontAwesomeIcon className="icon" icon={faFacebook} />
             </a>
@@ -42,6 +43,7 @@ const FooterSection = () => {
               href="https://twitter.com/nappernetwork"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to Napper Network Twitter account"
             >
               <FontAwesomeIcon className="icon" icon={faTwitter} />
             </a>
@@ -49,6 +51,7 @@ const FooterSection = () => {
               href="https://www.instagram.com/nappernetwork/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to Napper Network Instagram account"
             >
               <FontAwesomeIcon className="icon" icon={faInstagram} />
             </a>
@@ -56,6 +59,7 @@ const FooterSection = () => {
               href="https://www.linkedin.com/company/nappernetwork"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to Napper Network LinkedIn page"
             >
               <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
             </a>
@@ -63,6 +67,7 @@ const FooterSection = () => {
               href="https://www.pinterest.co.uk/NapperNetwork"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Link to Napper Network Pinterest page"
             >
               <FontAwesomeIcon className="icon" icon={faPinterest} />
             </a>

@@ -15,7 +15,7 @@ import PPCImg from "../media/ppc.png";
 
 const DigitalMarketing = () => {
   return (
-    <main>
+    <>
       <MetaData
         title="Digital Marketing"
         description="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
@@ -61,7 +61,7 @@ const DigitalMarketing = () => {
         </div>
       </ServiceDetail>
       <ContactSection />
-    </main>
+    </>
   );
 };
 

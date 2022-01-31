@@ -15,7 +15,7 @@ import HostingImg from "../media/hosting.png";
 
 const WebDevelopment = () => {
   return (
-    <main>
+    <>
       <MetaData
         title="Web Development"
         description="At Napper Network, we focus on user experience. Creating bespoke websites to improve your online presence and set you apart from competitors."
@@ -58,7 +58,7 @@ const WebDevelopment = () => {
         </div>
       </ServiceDetail>
       <ContactSection />
-    </main>
+    </>
   );
 };
 

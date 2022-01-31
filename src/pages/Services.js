@@ -10,7 +10,7 @@ import ServicesImg from "../media/services.png";
 
 const Services = () => {
   return (
-    <main>
+    <>
       <MetaData title="Services" />
 
       <HeroSection />
@@ -21,9 +21,10 @@ const Services = () => {
         titleSec="Solutions"
         text="We provide bespoke packages to suit your businesses goals and requirements. By taking time to understand your business, we can deliver effective strategies specific to your industry by conducting competitor analysis to maximise customer acquisition and increase conversions.  Whether you require one or multiple services, our expert team can create a solution for you!"
         image={ServicesImg}
+        imageAlt="Increased performance"
       />
       <ContactSection />
-    </main>
+    </>
   );
 };
 

@@ -23,6 +23,7 @@ const HeroSection = () => {
           href="https://www.facebook.com/NapperNetwork"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Link to Napper Network Facebook page"
         >
           <motion.div variants={fade}>
             <FontAwesomeIcon className="alt-icon" icon={faFacebook} />
@@ -32,6 +33,7 @@ const HeroSection = () => {
           href="https://twitter.com/nappernetwork"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Link to Napper Network Twitter account"
         >
           <motion.div variants={fade}>
             <FontAwesomeIcon className="alt-icon" icon={faTwitter} />
@@ -41,6 +43,7 @@ const HeroSection = () => {
           href="https://www.instagram.com/nappernetwork/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Link to Napper Network Instagram account"
         >
           <motion.div variants={fade}>
             <FontAwesomeIcon className="alt-icon" icon={faInstagram} />
@@ -50,6 +53,7 @@ const HeroSection = () => {
           href="https://www.linkedin.com/company/nappernetwork"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Link to Napper Network LinkedIn page"
         >
           <motion.div variants={fade}>
             <FontAwesomeIcon className="alt-icon" icon={faLinkedinIn} />
@@ -59,6 +63,7 @@ const HeroSection = () => {
           href="https://www.pinterest.co.uk/NapperNetwork"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Link to Napper Network Pinterest page"
         >
           <motion.div variants={fade}>
             <FontAwesomeIcon className="alt-icon" icon={faPinterest} />

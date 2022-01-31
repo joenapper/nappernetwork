@@ -8,7 +8,7 @@ import ContactSection from "../components/Home/ContactSection";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <MetaData title="Home" />
 
       <HeroSection />
@@ -19,7 +19,7 @@ const Home = () => {
       />
       <AboutSection />
       <ContactSection />
-    </main>
+    </>
   );
 };
 

@@ -15,7 +15,7 @@ import AdvertisingImg from "../media/advertising.png";
 
 const SocialMedia = () => {
   return (
-    <main>
+    <>
       <MetaData
         title="Social Media"
         description="At Napper Network, we provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
@@ -58,7 +58,7 @@ const SocialMedia = () => {
         </div>
       </ServiceDetail>
       <ContactSection />
-    </main>
+    </>
   );
 };
 

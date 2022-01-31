@@ -10,7 +10,7 @@ import { useScroll } from "../useScroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const AboutSection = ({ titleMain, titleSec, text, image }) => {
+const AboutSection = ({ titleMain, titleSec, text, image, imageAlt }) => {
   const [element, controls] = useScroll();
   return (
     <About>
@@ -37,7 +37,7 @@ const AboutSection = ({ titleMain, titleSec, text, image }) => {
           </div>
         </div>
         <div className="img-container">
-          <img src={image} alt="" />
+          <img src={image} alt={imageAlt} />
         </div>
       </motion.div>
     </About>

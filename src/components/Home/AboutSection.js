@@ -46,7 +46,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="img-container">
-          <img src={WhyUsImg} alt="" />
+          <img src={WhyUsImg} alt="Multitude of digital services" />
         </div>
       </motion.div>
     </About>
