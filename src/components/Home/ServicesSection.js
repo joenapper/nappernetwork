@@ -69,10 +69,6 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              {/* <p>
-                We deliver bespoke web design and development that simply cannot
-                be replicated by "out-the-box" alternatives.
-              </p> */}
             </Link>
           </motion.div>
 
@@ -98,10 +94,6 @@ const ServicesSection = () => {
                   icon={faChevronRight}
                 />
               </h4>
-              {/* <p>
-                We deliver bespoke web design and development that simply cannot
-                be replicated by "out-the-box" alternatives.
-              </p> */}
             </Link>
           </motion.div>
         </div>
@@ -194,7 +186,6 @@ const Services = styled.section`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    /*  */
     justify-content: center;
   }
 
@@ -243,17 +234,7 @@ const Services = styled.section`
     }
   }
 
-  /* @media (max-width: 768px) {
-    .container {
-      width: 90%;
-    }
-  } */
-
   @media (max-width: 521px) {
-    /* .container {
-      width: 90%;
-    } */
-
     .row {
       flex-direction: column;
     }

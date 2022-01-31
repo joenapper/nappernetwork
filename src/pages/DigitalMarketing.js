@@ -1,3 +1,5 @@
+// Helmet
+import { Helmet } from "react-helmet-async";
 // Styled
 import styled from "styled-components";
 // Components
@@ -11,8 +13,6 @@ import DigitalMarketingHero from "../media/digital-marketing-hero.png";
 import SEOImg from "../media/seo.png";
 import EmailMarketingImg from "../media/email-marketing.png";
 import PPCImg from "../media/ppc.png";
-// Helmet
-import { Helmet } from "react-helmet-async";
 
 const DigitalMarketing = () => {
   return (
@@ -24,6 +24,7 @@ const DigitalMarketing = () => {
           content="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
         />
       </Helmet>
+
       <ServiceItemHero
         title="Digital Marketing"
         text="Focusing on results, we provide effective digital marketing strategies to engage and convert customers."

@@ -12,7 +12,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 // Router
 import { Link } from "react-router-dom";
 
-const AboutSection = (props) => {
+const AboutSection = () => {
   const [element, controls] = useScroll();
   return (
     <About>

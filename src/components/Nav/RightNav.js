@@ -22,14 +22,6 @@ const RightNav = ({ open, setOpen }) => {
           Services
         </Link>
       </li>
-      {/* <li>
-        <Link to="/blog" onClick={closeNav}>
-          Blog
-        </Link>
-      </li> */}
-      {/* <li>
-        <Link to="/careers" onClick={closeNav}>Careers</Link>
-      </li> */}
       <li>
         <Link to="/contact" onClick={closeNav}>
           Contact

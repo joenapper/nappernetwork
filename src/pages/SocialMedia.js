@@ -1,3 +1,5 @@
+// Helmet
+import { Helmet } from "react-helmet-async";
 // Styled
 import styled from "styled-components";
 // Components
@@ -11,8 +13,6 @@ import SocialMediaHero from "../media/social-media-hero.png";
 import SocialMediaManagementImg from "../media/social-media-management.png";
 import ContentCreationImg from "../media/content-creation.png";
 import AdvertisingImg from "../media/advertising.png";
-// Helmet
-import { Helmet } from "react-helmet-async";
 
 const SocialMedia = () => {
   return (
@@ -24,6 +24,7 @@ const SocialMedia = () => {
           content="At Napper Network, we provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
         />
       </Helmet>
+
       <ServiceItemHero
         title="Social Media"
         text="We provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."

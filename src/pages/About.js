@@ -1,10 +1,10 @@
+// Helmet
+import { Helmet } from "react-helmet-async";
 // Components
 import HeroSection from "../components/About/HeroSection";
 import AboutSection from "../components/About/AboutSection";
 import ProcessSection from "../components/About/ProcessSection";
 import ContactSection from "../components/Home/ContactSection";
-// Helmet
-import { Helmet } from "react-helmet-async";
 // Images
 import AboutImg from "../media/about.png";
 
@@ -18,6 +18,7 @@ const About = () => {
           content="Napper Network is a Sheffield based digital marketing and web development agency."
         />
       </Helmet>
+
       <HeroSection />
       <AboutSection
         titleMain="About"

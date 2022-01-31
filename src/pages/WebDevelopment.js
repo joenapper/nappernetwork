@@ -1,3 +1,5 @@
+// Helmet
+import { Helmet } from "react-helmet-async";
 // Styled
 import styled from "styled-components";
 // Components
@@ -11,8 +13,6 @@ import WebDevelopmentHero from "../media/web-development-hero.png";
 import BespokeWebsitesImg from "../media/bespoke-websites.png";
 import WebDesignImg from "../media/web-design.png";
 import HostingImg from "../media/hosting.png";
-// Helmet
-import { Helmet } from "react-helmet-async";
 
 const WebDevelopment = () => {
   return (
@@ -24,6 +24,7 @@ const WebDevelopment = () => {
           content="At Napper Network, we focus on user experience. Creating bespoke websites to improve your online presence and set you apart from competitors."
         />
       </Helmet>
+
       <ServiceItemHero
         title="Web Development"
         text="Focusing on user experience, we create bespoke websites to improve your online presence and set you apart from competitors."

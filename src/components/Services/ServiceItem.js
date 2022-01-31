@@ -8,7 +8,14 @@ import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
 import { useScroll } from "../useScroll";
 
-const ServiceItem = (props) => {
+const ServiceItem = ({
+  background,
+  title,
+  text,
+  bulletOne,
+  bulletTwo,
+  bulletThree,
+}) => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
@@ -20,10 +27,7 @@ const ServiceItem = (props) => {
         initial="hidden"
         className="service-image"
       >
-        <div
-          className="img-container"
-          style={{ background: props.background }}
-        ></div>
+        <div className="img-container" style={{ background: background }}></div>
       </motion.div>
       <motion.div
         ref={element2}
@@ -32,21 +36,21 @@ const ServiceItem = (props) => {
         initial="hidden"
         className="service-text"
       >
-        <h2>{props.title}</h2>
-        <p>{props.text}</p>
+        <h2>{title}</h2>
+        <p>{text}</p>
         <h3>We can:</h3>
         <ul className="we-can">
           <li>
             <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>{props.bulletOne}</p>
+            <p>{bulletOne}</p>
           </li>
           <li>
             <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>{props.bulletTwo}</p>
+            <p>{bulletTwo}</p>
           </li>
           <li>
             <FontAwesomeIcon className="bullet-point" icon={faDotCircle} />
-            <p>{props.bulletThree}</p>
+            <p>{bulletThree}</p>
           </li>
         </ul>
       </motion.div>

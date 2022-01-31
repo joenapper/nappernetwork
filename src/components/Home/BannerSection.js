@@ -1,11 +1,11 @@
 // Styled
 import styled from "styled-components";
 
-const BannerSection = (props) => {
+const BannerSection = ({ text }) => {
   return (
     <Banner>
       <div className="container">
-        <h2 className="extended-title">{props.text}</h2>
+        <h2 className="extended-title">{text}</h2>
       </div>
     </Banner>
   );

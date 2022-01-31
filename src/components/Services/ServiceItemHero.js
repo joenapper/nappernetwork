@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fade } from "../LogoAnimations";
 
-const ServiceItemHero = (props) => {
+const ServiceItemHero = ({ background, title, text }) => {
   return (
-    <HeroContainer style={{ background: props.background }}>
+    <HeroContainer style={{ background: background }}>
       <div className="container">
         <motion.div
           variants={fade}
@@ -19,8 +19,8 @@ const ServiceItemHero = (props) => {
           animate="show"
           className="service-text-container"
         >
-          <h2>{props.title}</h2>
-          <p>{props.text}</p>
+          <h2>{title}</h2>
+          <p>{text}</p>
           <div className="button-container">
             <Link to="/contact" className="button">
               Enquire Now{" "}

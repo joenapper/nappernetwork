@@ -10,7 +10,7 @@ import { useScroll } from "../useScroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-const AboutSection = (props) => {
+const AboutSection = ({ titleMain, titleSec, text, image }) => {
   const [element, controls] = useScroll();
   return (
     <About>
@@ -23,10 +23,9 @@ const AboutSection = (props) => {
       >
         <div className="about-text">
           <h2>
-            {props.titleMain}{" "}
-            <span className="secondary">{props.titleSec}</span>
+            {titleMain} <span className="secondary">{titleSec}</span>
           </h2>
-          <p>{props.text}</p>
+          <p>{text}</p>
           <div className="button-container">
             <Link to="/contact" className="button button-alt">
               Enquire now{" "}
@@ -38,7 +37,7 @@ const AboutSection = (props) => {
           </div>
         </div>
         <div className="img-container">
-          <img src={props.image} alt="" />
+          <img src={image} alt="" />
         </div>
       </motion.div>
     </About>
@@ -140,14 +139,6 @@ const About = styled.section`
       width: 40%;
       margin-left: 5%;
     }
-    /* .container {
-      flex-direction: column;
-    } */
-
-    /* .about-text,
-    img {
-      width: 100%;
-    } */
   }
 
   @media (max-width: 1025px) {
