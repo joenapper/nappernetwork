@@ -1,6 +1,5 @@
-// Helmet
-import { Helmet } from "react-helmet-async";
 // Components
+import MetaData from "../components/MetaData";
 import HeroSection from "../components/About/HeroSection";
 import AboutSection from "../components/About/AboutSection";
 import ProcessSection from "../components/About/ProcessSection";
@@ -11,13 +10,7 @@ import AboutImg from "../media/about.png";
 const About = () => {
   return (
     <main>
-      <Helmet>
-        <title>Napper Network - About</title>
-        <meta
-          name="description"
-          content="Napper Network is a Sheffield based digital marketing and web development agency."
-        />
-      </Helmet>
+      <MetaData title="About" />
 
       <HeroSection />
       <AboutSection

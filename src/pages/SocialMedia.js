@@ -1,13 +1,12 @@
-// Helmet
-import { Helmet } from "react-helmet-async";
-// Styled
-import styled from "styled-components";
 // Components
+import MetaData from "../components/MetaData";
 import ServiceItemHero from "../components/Services/ServiceItemHero";
 import ServiceTitle from "../components/Services/ServiceTitle";
 import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
+// Styled
+import styled from "styled-components";
 // Images
 import SocialMediaHero from "../media/social-media-hero.png";
 import SocialMediaManagementImg from "../media/social-media-management.png";
@@ -17,13 +16,10 @@ import AdvertisingImg from "../media/advertising.png";
 const SocialMedia = () => {
   return (
     <main>
-      <Helmet>
-        <title>Napper Network - Social Media</title>
-        <meta
-          name="description"
-          content="At Napper Network, we provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
-        />
-      </Helmet>
+      <MetaData
+        title="Social Media"
+        description="At Napper Network, we provide efficient social media marketing strategies to boost your awareness, improve conversion rates and increase brand loyalty."
+      />
 
       <ServiceItemHero
         title="Social Media"

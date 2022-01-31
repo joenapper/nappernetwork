@@ -1,13 +1,12 @@
-// Helmet
-import { Helmet } from "react-helmet-async";
-// Styled
-import styled from "styled-components";
 // Components
+import MetaData from "../components/MetaData";
 import ServiceItemHero from "../components/Services/ServiceItemHero";
 import ServiceTitle from "../components/Services/ServiceTitle";
 import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
+// Styled
+import styled from "styled-components";
 // Images
 import WebDevelopmentHero from "../media/web-development-hero.png";
 import BespokeWebsitesImg from "../media/bespoke-websites.png";
@@ -17,13 +16,10 @@ import HostingImg from "../media/hosting.png";
 const WebDevelopment = () => {
   return (
     <main>
-      <Helmet>
-        <title>Napper Network - Web Development</title>
-        <meta
-          name="description"
-          content="At Napper Network, we focus on user experience. Creating bespoke websites to improve your online presence and set you apart from competitors."
-        />
-      </Helmet>
+      <MetaData
+        title="Web Development"
+        description="At Napper Network, we focus on user experience. Creating bespoke websites to improve your online presence and set you apart from competitors."
+      />
 
       <ServiceItemHero
         title="Web Development"

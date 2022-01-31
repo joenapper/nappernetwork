@@ -1,13 +1,12 @@
-// Helmet
-import { Helmet } from "react-helmet-async";
-// Styled
-import styled from "styled-components";
 // Components
+import MetaData from "../components/MetaData";
 import ServiceItemHero from "../components/Services/ServiceItemHero";
 import ServiceTitle from "../components/Services/ServiceTitle";
 import ServiceItem from "../components/Services/ServiceItem";
 import ServiceItemAlt from "../components/Services/ServiceItemAlt";
 import ContactSection from "../components/Home/ContactSection";
+// Styled
+import styled from "styled-components";
 // Images
 import DigitalMarketingHero from "../media/digital-marketing-hero.png";
 import SEOImg from "../media/seo.png";
@@ -17,13 +16,10 @@ import PPCImg from "../media/ppc.png";
 const DigitalMarketing = () => {
   return (
     <main>
-      <Helmet>
-        <title>Napper Network - Digital Marketing</title>
-        <meta
-          name="description"
-          content="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
-        />
-      </Helmet>
+      <MetaData
+        title="Digital Marketing"
+        description="At Napper Network, we provide effective digital marketing strategies to engage and convert customers."
+      />
 
       <ServiceItemHero
         title="Digital Marketing"
